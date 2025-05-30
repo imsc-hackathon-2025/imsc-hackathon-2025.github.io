@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School Track - Leaderboard | IMSC Hackathon 2025</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../../index.html">IMSC Hackathon 2025</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Tracks</a>
+                    <div class="dropdown-content">
+                        <a href="../high-school-consolidated.html">High School</a>
+                        <a href="../undergraduate-consolidated.html">Undergraduate</a>
+                        <a href="../graduate-plus-consolidated.html">Graduate+</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../organizers.html" class="nav-link">Organizers</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Track Navigation -->
+            <nav class="track-nav">
+                <div class="track-nav-container">
+                    <h2>High School Track</h2>
+                    <ul class="track-nav-links">
+                        <li><a href="../high-school-consolidated.html">Overview</a></li>
+                        <li><a href="../high-school-consolidated.html#dataset">Dataset</a></li>
+                        <li><a href="../high-school-consolidated.html#timeline">Timeline</a></li>
+                        <li><a href="../high-school-consolidated.html#criteria">Criteria</a></li>
+                        <li><a href="../high-school-consolidated.html#leaderboard" class="active">Leaderboard</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="leaderboard-section">
+                <div class="leaderboard-header">
+                    <h1>High School Track Leaderboard</h1>
+                    <p class="leaderboard-subtitle">Live rankings updated every hour during the competition</p>
+                    <div class="last-updated">
+                        <span>Last Updated: <span id="lastUpdate">Competition not started</span></span>
+                    </div>
+                </div>
+
+                <div class="leaderboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Teams Registered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Submissions</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">-</div>
+                        <div class="stat-label">Best Score</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">00:00:00</div>
+                        <div class="stat-label">Time Remaining</div>
+                    </div>
+                </div>
+
+                <div class="leaderboard-controls">
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="all">All Teams</button>
+                        <button class="filter-btn" data-filter="public">Public Submissions</button>
+                        <button class="filter-btn" data-filter="private">Private Submissions</button>
+                    </div>
+                    <div class="sort-options">
+                        <label for="sortBy">Sort by:</label>
+                        <select id="sortBy">
+                            <option value="score">Score (Highest)</option>
+                            <option value="time">Submission Time</option>
+                            <option value="team">Team Name</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="leaderboard-container">
+                    <div class="leaderboard-info">
+                        <div class="info-card">
+                            <h3>📊 Scoring System</h3>
+                            <ul>
+                                <li><strong>Primary Metric:</strong> Accuracy</li>
+                                <li><strong>Secondary Metric:</strong> F1-Score</li>
+                                <li><strong>Tiebreaker:</strong> Submission Time</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>🏆 Prizes</h3>
+                            <ul>
+                                <li><strong>1st Place:</strong> $500 + Certificates</li>
+                                <li><strong>2nd Place:</strong> $300 + Certificates</li>
+                                <li><strong>3rd Place:</strong> $200 + Certificates</li>
+                                <li><strong>Top 10:</strong> Recognition Certificates</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="leaderboard-table-container">
+                        <table class="leaderboard-table" id="leaderboardTable">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Team Name</th>
+                                    <th>School</th>
+                                    <th>Score</th>
+                                    <th>F1-Score</th>
+                                    <th>Submissions</th>
+                                    <th>Last Submission</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaderboardBody">
+                                <tr class="no-data">
+                                    <td colspan="7">
+                                        <div class="no-data-message">
+                                            <div class="no-data-icon">🚀</div>
+                                            <h3>Competition Not Started</h3>
+                                            <p>The leaderboard will be populated once teams start submitting their solutions.</p>
+                                            <p><strong>Registration opens:</strong> February 1, 2025</p>
+                                            <p><strong>Competition starts:</strong> February 15, 2025</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="submission-guidelines">
+                    <h2>Submission Guidelines</h2>
+                    <div class="guidelines-grid">
+                        <div class="guideline-card">
+                            <h3>📝 Submission Format</h3>
+                            <ul>
+                                <li>Submit predictions as CSV file</li>
+                                <li>Include team name and timestamp</li>
+                                <li>Follow exact format specified in dataset</li>
+                                <li>Maximum file size: 50MB</li>
+                            </ul>
+                        </div>
+                        <div class="guideline-card">
+                            <h3>⏰ Submission Limits</h3>
+                            <ul>
+                                <li>Maximum 5 submissions per day</li>
+                                <li>Only best score counts for ranking</li>
+                                <li>Final submission deadline strictly enforced</li>
+                                <li>Late submissions not accepted</li>
+                            </ul>
+                        </div>
+                        <div class="guideline-card">
+                            <h3>✅ Validation Process</h3>
+                            <ul>
+                                <li>Automated validation upon submission</li>
+                                <li>Instant feedback on format errors</li>
+                                <li>Public leaderboard updated hourly</li>
+                                <li>Final rankings based on private test set</li>
+                            </ul>
+                        </div>
+                        <div class="guideline-card">
+                            <h3>🔒 Fair Play Policy</h3>
+                            <ul>
+                                <li>No sharing of solutions between teams</li>
+                                <li>Original work only - no pre-trained models</li>
+                                <li>External datasets not permitted</li>
+                                <li>Violations result in disqualification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="registration-info">
+                    <h2>How to Participate</h2>
+                    <div class="participation-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Register Your Team</h3>
+                            <p>Form a team of 1-4 high school students and register through our platform.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Download Dataset</h3>
+                            <p>Access the competition dataset and review the problem statement carefully.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Develop Solution</h3>
+                            <p>Build your machine learning model using any framework or programming language.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Submit Predictions</h3>
+                            <p>Upload your predictions and track your progress on the leaderboard.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-support">
+                    <h2>Need Help?</h2>
+                    <div class="support-options">
+                        <div class="support-item">
+                            <h3>📧 Email Support</h3>
+                            <p>Technical questions: <a href="mailto:support@isi.edu">support@isi.edu</a></p>
+                        </div>
+                        <div class="support-item">
+                            <h3>💬 Discord Channel</h3>
+                            <p>Join our community for real-time help and discussions</p>
+                        </div>
+                        <div class="support-item">
+                            <h3>📖 Documentation</h3>
+                            <p>Comprehensive guides and FAQs available in our knowledge base</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IMSC Hackathon 2025</h3>
+                    <p>Information Sciences Institute<br>University of Southern California</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../organizers.html">Organizers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Tracks</h3>
+                    <ul>
+                        <li><a href="../high-school-consolidated.html">High School</a></li>
+                        <li><a href="../undergraduate-consolidated.html">Undergraduate</a></li>
+                        <li><a href="../graduate-plus-consolidated.html">Graduate+</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: hackathon@isi.edu<br>Phone: (213) 822-1511</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 USC Information Sciences Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/script.js"></script>
+    <script>
+        // Leaderboard specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    // Filter logic would go here when data is available
+                });
+            });
+
+            // Sort functionality
+            const sortSelect = document.getElementById('sortBy');
+            sortSelect.addEventListener('change', function() {
+                // Sort logic would go here when data is available
+            });
+
+            // Simulate countdown timer (placeholder)
+            function updateCountdown() {
+                const countdownElement = document.querySelector('.stat-card:last-child .stat-number');
+                // This would be replaced with actual competition end time
+                countdownElement.textContent = 'Coming Soon';
+            }
+
+            updateCountdown();
+        });
+    </script>
+</body>
+</html>

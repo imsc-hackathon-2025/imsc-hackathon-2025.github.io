@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate+ Track - Leaderboard | IMSC Hackathon 2025</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../../index.html">IMSC Hackathon 2025</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Tracks</a>
+                    <div class="dropdown-content">
+                        <a href="../high-school-consolidated.html">High School</a>
+                        <a href="../undergraduate-consolidated.html">Undergraduate</a>
+                        <a href="../graduate-plus-consolidated.html">Graduate+</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../organizers.html" class="nav-link">Organizers</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Track Navigation -->
+            <nav class="track-nav">
+                <div class="track-nav-container">
+                    <h2>Graduate+ Track</h2>
+                    <ul class="track-nav-links">
+                        <li><a href="../graduate-plus-consolidated.html">Overview</a></li>
+                        <li><a href="../graduate-plus-consolidated.html#dataset">Dataset</a></li>
+                        <li><a href="../graduate-plus-consolidated.html#timeline">Timeline</a></li>
+                        <li><a href="../graduate-plus-consolidated.html#criteria">Criteria</a></li>
+                        <li><a href="../graduate-plus-consolidated.html#leaderboard" class="active">Leaderboard</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="leaderboard-section">
+                <div class="leaderboard-header">
+                    <h1>Graduate+ Track Leaderboard</h1>
+                    <p class="leaderboard-subtitle">Research-grade evaluation with comprehensive peer review</p>
+                    <div class="last-updated">
+                        <span>Last Updated: <span id="lastUpdate">Competition not started</span></span>
+                    </div>
+                </div>
+
+                <div class="leaderboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Research Teams</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Technical Reports</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">-</div>
+                        <div class="stat-label">Best Overall Score</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Peer Reviews</div>
+                    </div>
+                </div>
+
+                <div class="leaderboard-controls">
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="all">All Teams</button>
+                        <button class="filter-btn" data-filter="institution">By Institution</button>
+                        <button class="filter-btn" data-filter="approach">By Approach</button>
+                        <button class="filter-btn" data-filter="reviewed">Peer Reviewed</button>
+                    </div>
+                    <div class="sort-options">
+                        <label for="sortBy">Sort by:</label>
+                        <select id="sortBy">
+                            <option value="overall">Overall Score (Highest)</option>
+                            <option value="technical">Technical Innovation</option>
+                            <option value="performance">Performance Metrics</option>
+                            <option value="impact">Research Impact</option>
+                            <option value="presentation">Presentation Quality</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="leaderboard-container">
+                    <div class="leaderboard-info">
+                        <div class="info-card">
+                            <h3>🔬 Evaluation Components</h3>
+                            <ul>
+                                <li><strong>Technical Innovation (25%):</strong> Novel approaches and methodology</li>
+                                <li><strong>Performance Metrics (25%):</strong> Quantitative results and benchmarks</li>
+                                <li><strong>Research Impact (20%):</strong> Contribution to the field</li>
+                                <li><strong>Presentation (15%):</strong> Technical report and presentation quality</li>
+                                <li><strong>Peer Review (15%):</strong> Community evaluation and feedback</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>🏆 Recognition & Opportunities</h3>
+                            <ul>
+                                <li><strong>Grand Prize:</strong> $5,000 + Research Collaboration</li>
+                                <li><strong>Innovation Award:</strong> $3,000 + Publication Support</li>
+                                <li><strong>Impact Award:</strong> $2,000 + Industry Partnership</li>
+                                <li><strong>Best Paper:</strong> Conference Presentation Opportunity</li>
+                                <li><strong>Top 3:</strong> Postdoc/Industry Position Referrals</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="leaderboard-table-container">
+                        <table class="leaderboard-table" id="leaderboardTable">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Team/Research Group</th>
+                                    <th>Institution</th>
+                                    <th>Overall Score</th>
+                                    <th>Technical Innovation</th>
+                                    <th>Performance</th>
+                                    <th>Research Impact</th>
+                                    <th>Peer Reviews</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaderboardBody">
+                                <tr class="no-data">
+                                    <td colspan="9">
+                                        <div class="no-data-message">
+                                            <div class="no-data-icon">🎓</div>
+                                            <h3>Research Competition Not Started</h3>
+                                            <p>The graduate+ track operates on an extended timeline with multiple evaluation phases.</p>
+                                            <div class="timeline-preview">
+                                                <div class="timeline-item">
+                                                    <strong>Phase 1:</strong> Registration & Proposal Submission (Feb 1-15)
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <strong>Phase 2:</strong> Research & Development (Feb 16 - Mar 15)
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <strong>Phase 3:</strong> Peer Review Process (Mar 16-30)
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <strong>Phase 4:</strong> Final Presentations (April 1-15)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="evaluation-phases">
+                    <h2>Multi-Phase Evaluation Process</h2>
+                    <div class="phases-container">
+                        <div class="phase-card">
+                            <div class="phase-number">1</div>
+                            <h3>Initial Submission</h3>
+                            <div class="phase-details">
+                                <ul>
+                                    <li>Technical report (8-12 pages)</li>
+                                    <li>Complete source code</li>
+                                    <li>Experimental results</li>
+                                    <li>Reproducibility package</li>
+                                </ul>
+                                <div class="phase-deadline">Deadline: March 15, 2025</div>
+                            </div>
+                        </div>
+                        
+                        <div class="phase-card">
+                            <div class="phase-number">2</div>
+                            <h3>Peer Review</h3>
+                            <div class="phase-details">
+                                <ul>
+                                    <li>Expert reviewer assignment</li>
+                                    <li>Double-blind review process</li>
+                                    <li>Technical evaluation criteria</li>
+                                    <li>Constructive feedback provision</li>
+                                </ul>
+                                <div class="phase-deadline">Duration: March 16-30, 2025</div>
+                            </div>
+                        </div>
+                        
+                        <div class="phase-card">
+                            <div class="phase-number">3</div>
+                            <h3>Revision & Response</h3>
+                            <div class="phase-details">
+                                <ul>
+                                    <li>Address reviewer comments</li>
+                                    <li>Improve technical content</li>
+                                    <li>Enhance experimental validation</li>
+                                    <li>Prepare final presentation</li>
+                                </ul>
+                                <div class="phase-deadline">Deadline: April 5, 2025</div>
+                            </div>
+                        </div>
+                        
+                        <div class="phase-card">
+                            <div class="phase-number">4</div>
+                            <h3>Final Presentation</h3>
+                            <div class="phase-details">
+                                <ul>
+                                    <li>20-minute research presentation</li>
+                                    <li>15-minute technical Q&A</li>
+                                    <li>Live demonstration (optional)</li>
+                                    <li>Panel discussion</li>
+                                </ul>
+                                <div class="phase-deadline">Event: April 10-12, 2025</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-requirements">
+                    <h2>Research Submission Requirements</h2>
+                    <div class="requirements-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="technical">Technical Report</button>
+                            <button class="tab-btn" data-tab="code">Source Code</button>
+                            <button class="tab-btn" data-tab="data">Data & Models</button>
+                            <button class="tab-btn" data-tab="presentation">Presentation</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="technical">
+                            <h3>Technical Report Guidelines</h3>
+                            <ul>
+                                <li><strong>Format:</strong> IEEE or ACM conference template</li>
+                                <li><strong>Length:</strong> 8-12 pages (including references)</li>
+                                <li><strong>Sections:</strong> Abstract, Introduction, Related Work, Methodology, Experiments, Results, Discussion, Conclusion</li>
+                                <li><strong>Figures:</strong> High-quality plots and diagrams</li>
+                                <li><strong>References:</strong> Minimum 20 relevant citations</li>
+                                <li><strong>Reproducibility:</strong> Detailed experimental setup</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-content" id="code">
+                            <h3>Source Code Standards</h3>
+                            <ul>
+                                <li><strong>Documentation:</strong> Comprehensive README and inline comments</li>
+                                <li><strong>Structure:</strong> Organized directory structure with clear naming</li>
+                                <li><strong>Dependencies:</strong> Complete requirements.txt or environment.yml</li>
+                                <li><strong>Scripts:</strong> Automated training and evaluation scripts</li>
+                                <li><strong>Version Control:</strong> Git repository with meaningful commit history</li>
+                                <li><strong>Testing:</strong> Unit tests for critical components</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-content" id="data">
+                            <h3>Data & Model Artifacts</h3>
+                            <ul>
+                                <li><strong>Preprocessed Data:</strong> All data transformations and feature engineering</li>
+                                <li><strong>Model Weights:</strong> Trained model checkpoints and configurations</li>
+                                <li><strong>Evaluation Results:</strong> Detailed performance metrics and analysis</li>
+                                <li><strong>Visualizations:</strong> Result plots, confusion matrices, and error analysis</li>
+                                <li><strong>Baseline Comparisons:</strong> Results from established methods</li>
+                                <li><strong>Statistical Tests:</strong> Significance testing and confidence intervals</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-content" id="presentation">
+                            <h3>Presentation Requirements</h3>
+                            <ul>
+                                <li><strong>Duration:</strong> 20 minutes presentation + 15 minutes Q&A</li>
+                                <li><strong>Content:</strong> Problem motivation, methodology, key results, contributions</li>
+                                <li><strong>Slides:</strong> Professional quality with clear visualizations</li>
+                                <li><strong>Demo:</strong> Optional live demonstration of the system</li>
+                                <li><strong>Audience:</strong> Technical experts and industry professionals</li>
+                                <li><strong>Recording:</strong> Session will be recorded for judging panel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expert-panel">
+                    <h2>Expert Judging Panel</h2>
+                    <div class="panel-info">
+                        <p>Graduate+ submissions are evaluated by a distinguished panel of experts from academia and industry:</p>
+                        <div class="panel-categories">
+                            <div class="panel-category">
+                                <h3>🎓 Academic Experts</h3>
+                                <ul>
+                                    <li>Senior faculty from top-tier universities</li>
+                                    <li>Principal investigators from national labs</li>
+                                    <li>Editorial board members from premier journals</li>
+                                    <li>Program committee chairs from major conferences</li>
+                                </ul>
+                            </div>
+                            <div class="panel-category">
+                                <h3>🏢 Industry Leaders</h3>
+                                <ul>
+                                    <li>Chief scientists from technology companies</li>
+                                    <li>Research directors from AI labs</li>
+                                    <li>Senior engineers from product teams</li>
+                                    <li>Technical advisors from startups</li>
+                                </ul>
+                            </div>
+                            <div class="panel-category">
+                                <h3>🔬 Research Scientists</h3>
+                                <ul>
+                                    <li>Postdoctoral researchers from leading institutions</li>
+                                    <li>Staff scientists from government agencies</li>
+                                    <li>Technical leads from research organizations</li>
+                                    <li>Industry-academia collaboration experts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="networking-opportunities">
+                    <h2>Networking & Career Opportunities</h2>
+                    <div class="opportunities-grid">
+                        <div class="opportunity-card">
+                            <h3>🤝 Industry Connections</h3>
+                            <p>Connect with hiring managers, research directors, and technical leads from major technology companies during the final presentation event.</p>
+                        </div>
+                        <div class="opportunity-card">
+                            <h3>📖 Publication Support</h3>
+                            <p>Top submissions receive guidance for publication in peer-reviewed conferences and journals, with potential co-authorship opportunities.</p>
+                        </div>
+                        <div class="opportunity-card">
+                            <h3>🔬 Research Collaboration</h3>
+                            <p>Outstanding projects may lead to ongoing research collaborations with USC faculty and external partners.</p>
+                        </div>
+                        <div class="opportunity-card">
+                            <h3>💼 Career Advancement</h3>
+                            <p>Winners gain access to exclusive job opportunities, postdoctoral positions, and fast-track interview processes.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IMSC Hackathon 2025</h3>
+                    <p>Information Sciences Institute<br>University of Southern California</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../organizers.html">Organizers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Tracks</h3>
+                    <ul>
+                        <li><a href="../high-school-consolidated.html">High School</a></li>
+                        <li><a href="../undergraduate-consolidated.html">Undergraduate</a></li>
+                        <li><a href="../graduate-plus-consolidated.html">Graduate+</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: hackathon@isi.edu<br>Phone: (213) 822-1511</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 USC Information Sciences Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/script.js"></script>
+    <script>
+        // Graduate+ specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab functionality for requirements
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const targetTab = this.dataset.tab;
+                    
+                    // Remove active class from all buttons and contents
+                    tabButtons.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(targetTab).classList.add('active');
+                });
+            });
+
+            // Filter functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    // Filter logic would go here when data is available
+                });
+            });
+
+            // Sort functionality
+            const sortSelect = document.getElementById('sortBy');
+            sortSelect.addEventListener('change', function() {
+                // Sort logic would go here when data is available
+            });
+        });
+    </script>
+</body>
+</html>

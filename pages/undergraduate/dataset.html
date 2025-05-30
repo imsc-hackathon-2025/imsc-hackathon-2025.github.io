@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset - Undergraduate Track - IMSC Hackathon 2025</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><i class="fas fa-code"></i> IMSC Hackathon 2025</h2>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="../../index.html#about">About</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">High School <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../high-school-consolidated.html">Overview</a></li>
+                        <li><a href="../high-school-consolidated.html#dataset">Dataset</a></li>
+                        <li><a href="../high-school-consolidated.html#timeline">Timeline</a></li>
+                        <li><a href="../high-school-consolidated.html#criteria">Criteria</a></li>
+                        <li><a href="../high-school-consolidated.html#leaderboard">Leaderboard</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle active">UnderGraduate <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../undergraduate-consolidated.html">Overview</a></li>
+                        <li><a href="../undergraduate-consolidated.html#dataset">Dataset</a></li>
+                        <li><a href="../undergraduate-consolidated.html#timeline">Timeline</a></li>
+                        <li><a href="../undergraduate-consolidated.html#criteria">Criteria</a></li>
+                        <li><a href="../undergraduate-consolidated.html#leaderboard">Leaderboard</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Graduate+ <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../graduate-plus-consolidated.html">Overview</a></li>
+                        <li><a href="../graduate-plus-consolidated.html#dataset">Dataset</a></li>
+                        <li><a href="../graduate-plus-consolidated.html#timeline">Timeline</a></li>
+                        <li><a href="../graduate-plus-consolidated.html#criteria">Criteria</a></li>
+                        <li><a href="../graduate-plus-consolidated.html#leaderboard">Leaderboard</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <span class="separator">/</span>
+                    <a href="../undergraduate-consolidated.html">Undergraduate Track</a>
+                    <span class="separator">/</span>
+                    <span class="current">Dataset</span>
+                </div>
+                <h1 class="page-title">
+                    <i class="fas fa-database track-icon undergraduate"></i>
+                    Undergraduate Dataset
+                </h1>
+                <p class="page-subtitle">Multi-Modal Medical Diagnosis Challenge</p>
+            </div>
+
+            <div class="page-layout">
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <h3>Track Navigation</h3>
+                        <ul>
+                            <li><a href="../undergraduate-consolidated.html"><i class="fas fa-home"></i> Overview</a></li>
+                            <li><a href="../undergraduate-consolidated.html#dataset" class="active"><i class="fas fa-database"></i> Dataset</a></li>
+                            <li><a href="../undergraduate-consolidated.html#timeline"><i class="fas fa-calendar"></i> Timeline</a></li>
+                            <li><a href="../undergraduate-consolidated.html#criteria"><i class="fas fa-gavel"></i> Criteria</a></li>
+                            <li><a href="../undergraduate-consolidated.html#leaderboard"><i class="fas fa-trophy"></i> Leaderboard</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="sidebar-card dataset-card">
+                        <div class="card-header">
+                            <i class="fas fa-info-circle"></i>
+                            <h4>Dataset Info</h4>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Size</span>
+                            <span class="stat-value">15 GB</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Samples</span>
+                            <span class="stat-value">50K+</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Modalities</span>
+                            <span class="stat-value">3 Types</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">License</span>
+                            <span class="stat-value">Research Only</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <div class="card-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Data Agreement</h4>
+                        </div>
+                        <p>This dataset contains synthetic medical data. By downloading, you agree to use it responsibly.</p>
+                        <a href="#" class="btn btn-primary btn-small">
+                            <i class="fas fa-file-contract"></i> Sign Agreement
+                        </a>
+                    </div>
+                </aside>
+
+                <div class="content">
+                    <section class="dataset-overview">
+                        <h2>Challenge Overview</h2>
+                        <div class="challenge-description">
+                            <p>The Multi-Modal Medical Diagnosis Challenge presents a complex real-world problem: developing an AI system that can assist in medical diagnosis by analyzing patient data from multiple sources including medical images, lab results, and patient history.</p>
+                            
+                            <div class="challenge-goals">
+                                <h3><i class="fas fa-bullseye"></i> Objectives</h3>
+                                <ul>
+                                    <li>Build a multi-modal fusion model combining images, text, and numerical data</li>
+                                    <li>Achieve >85% accuracy on the test set</li>
+                                    <li>Provide explainable predictions with confidence scores</li>
+                                    <li>Design a clinical decision support interface</li>
+                                    <li>Handle class imbalance and rare diseases effectively</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dataset-structure">
+                        <h2><i class="fas fa-sitemap"></i> Dataset Structure</h2>
+                        <div class="structure-grid">
+                            <div class="structure-card">
+                                <div class="card-header">
+                                    <i class="fas fa-x-ray"></i>
+                                    <h3>Medical Images</h3>
+                                </div>
+                                <p><strong>Size:</strong> 10 GB | <strong>Files:</strong> 25,000 images</p>
+                                <p>High-resolution medical images including X-rays, CT scans, and MRI</p>
+                                <div class="columns-list">
+                                    <span class="column-tag">chest_xray/</span>
+                                    <span class="column-tag">brain_mri/</span>
+                                    <span class="column-tag">ct_scans/</span>
+                                    <span class="column-tag">metadata.json</span>
+                                </div>
+                            </div>
+                            
+                            <div class="structure-card">
+                                <div class="card-header">
+                                    <i class="fas fa-file-medical"></i>
+                                    <h3>Clinical Reports</h3>
+                                </div>
+                                <p><strong>Size:</strong> 2 GB | <strong>Records:</strong> 50,000</p>
+                                <p>Structured and unstructured clinical text data</p>
+                                <div class="columns-list">
+                                    <span class="column-tag">patient_id</span>
+                                    <span class="column-tag">symptoms</span>
+                                    <span class="column-tag">clinical_notes</span>
+                                    <span class="column-tag">diagnosis_text</span>
+                                    <span class="column-tag">doctor_notes</span>
+                                </div>
+                            </div>
+                            
+                            <div class="structure-card">
+                                <div class="card-header">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h3>Lab Results</h3>
+                                </div>
+                                <p><strong>Size:</strong> 3 GB | <strong>Records:</strong> 50,000</p>
+                                <p>Comprehensive laboratory test results and vital signs</p>
+                                <div class="columns-list">
+                                    <span class="column-tag">blood_work</span>
+                                    <span class="column-tag">vital_signs</span>
+                                    <span class="column-tag">biomarkers</span>
+                                    <span class="column-tag">test_results</span>
+                                    <span class="column-tag">timestamps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="data-distribution">
+                        <h2><i class="fas fa-chart-pie"></i> Data Distribution</h2>
+                        <div class="distribution-grid">
+                            <div class="dist-card">
+                                <h3>Disease Categories</h3>
+                                <div class="dist-item">
+                                    <span class="dist-label">Cardiovascular</span>
+                                    <div class="dist-bar">
+                                        <div class="dist-fill" style="width: 25%"></div>
+                                    </div>
+                                    <span class="dist-value">25%</span>
+                                </div>
+                                <div class="dist-item">
+                                    <span class="dist-label">Respiratory</span>
+                                    <div class="dist-bar">
+                                        <div class="dist-fill" style="width: 22%"></div>
+                                    </div>
+                                    <span class="dist-value">22%</span>
+                                </div>
+                                <div class="dist-item">
+                                    <span class="dist-label">Neurological</span>
+                                    <div class="dist-bar">
+                                        <div class="dist-fill" style="width: 18%"></div>
+                                    </div>
+                                    <span class="dist-value">18%</span>
+                                </div>
+                                <div class="dist-item">
+                                    <span class="dist-label">Oncological</span>
+                                    <div class="dist-bar">
+                                        <div class="dist-fill" style="width: 15%"></div>
+                                    </div>
+                                    <span class="dist-value">15%</span>
+                                </div>
+                                <div class="dist-item">
+                                    <span class="dist-label">Other</span>
+                                    <div class="dist-bar">
+                                        <div class="dist-fill" style="width: 20%"></div>
+                                    </div>
+                                    <span class="dist-value">20%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="dist-card">
+                                <h3>Data Modalities</h3>
+                                <div class="modality-stats">
+                                    <div class="modality-item">
+                                        <i class="fas fa-image"></i>
+                                        <span>Images Available</span>
+                                        <strong>96%</strong>
+                                    </div>
+                                    <div class="modality-item">
+                                        <i class="fas fa-file-alt"></i>
+                                        <span>Clinical Text</span>
+                                        <strong>100%</strong>
+                                    </div>
+                                    <div class="modality-item">
+                                        <i class="fas fa-flask"></i>
+                                        <span>Lab Results</span>
+                                        <strong>87%</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sample-data">
+                        <h2><i class="fas fa-eye"></i> Sample Data Preview</h2>
+                        
+                        <div class="data-preview">
+                            <h3>Clinical Report Sample</h3>
+                            <div class="code-block">
+                                <pre><code>{
+  "patient_id": "P_12345",
+  "age": 45,
+  "gender": "F",
+  "symptoms": ["chest pain", "shortness of breath", "fatigue"],
+  "clinical_notes": "Patient presents with acute chest pain radiating to left arm...",
+  "diagnosis": "acute_myocardial_infarction",
+  "confidence": 0.92,
+  "imaging_available": true,
+  "lab_results_id": "LAB_12345"
+}</code></pre>
+                            </div>
+                            
+                            <h3>Lab Results Sample</h3>
+                            <div class="code-block">
+                                <pre><code>{
+  "lab_id": "LAB_12345",
+  "patient_id": "P_12345",
+  "troponin_i": 0.85,
+  "ck_mb": 45.2,
+  "cholesterol": 280,
+  "blood_pressure": [140, 90],
+  "heart_rate": 95,
+  "abnormal_flags": ["troponin_i", "cholesterol"]
+}</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="technical-requirements">
+                        <h2><i class="fas fa-cogs"></i> Technical Requirements</h2>
+                        <div class="requirements-grid">
+                            <div class="req-card">
+                                <div class="req-header">
+                                    <i class="fas fa-microchip"></i>
+                                    <h3>Hardware</h3>
+                                </div>
+                                <ul>
+                                    <li>GPU with 8GB+ VRAM recommended</li>
+                                    <li>32GB+ RAM for large batch processing</li>
+                                    <li>100GB+ storage space</li>
+                                    <li>Multi-core CPU for preprocessing</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="req-card">
+                                <div class="req-header">
+                                    <i class="fas fa-code"></i>
+                                    <h3>Software</h3>
+                                </div>
+                                <ul>
+                                    <li>Python 3.8+ with deep learning frameworks</li>
+                                    <li>Medical imaging libraries (SimpleITK, Pydicom)</li>
+                                    <li>NLP libraries (spaCy, NLTK, Transformers)</li>
+                                    <li>Visualization tools (Matplotlib, Plotly)</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="req-card">
+                                <div class="req-header">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <h3>Compliance</h3>
+                                </div>
+                                <ul>
+                                    <li>HIPAA-like privacy considerations</li>
+                                    <li>Synthetic data - no real patient info</li>
+                                    <li>Ethical AI guidelines adherence</li>
+                                    <li>Bias detection and mitigation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="evaluation-metrics">
+                        <h2><i class="fas fa-chart-bar"></i> Evaluation Metrics</h2>
+                        <div class="metrics-info">
+                            <div class="primary-metrics">
+                                <h3>Primary Metrics</h3>
+                                <div class="metric-item">
+                                    <span class="metric-name">Weighted F1-Score</span>
+                                    <span class="metric-weight">40%</span>
+                                    <p>Handles class imbalance effectively</p>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-name">AUC-ROC (macro)</span>
+                                    <span class="metric-weight">30%</span>
+                                    <p>Overall classification performance</p>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-name">Sensitivity (Recall)</span>
+                                    <span class="metric-weight">20%</span>
+                                    <p>Critical for medical diagnosis</p>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-name">Explainability Score</span>
+                                    <span class="metric-weight">10%</span>
+                                    <p>Model interpretability assessment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="starter-resources">
+                        <h2><i class="fas fa-rocket"></i> Starter Resources</h2>
+                        <div class="resources-grid">
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <i class="fab fa-python"></i>
+                                    <h3>Multi-Modal Baseline</h3>
+                                </div>
+                                <p>Complete implementation with data loaders, fusion models, and evaluation scripts</p>
+                                <div class="resource-tags">
+                                    <span class="tag">PyTorch</span>
+                                    <span class="tag">TensorFlow</span>
+                                    <span class="tag">Transformers</span>
+                                </div>
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fas fa-download"></i> Download
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <i class="fas fa-book-medical"></i>
+                                    <h3>Medical AI Guide</h3>
+                                </div>
+                                <p>Comprehensive guide to medical imaging, clinical NLP, and ethical considerations</p>
+                                <div class="resource-tags">
+                                    <span class="tag">Documentation</span>
+                                    <span class="tag">Best Practices</span>
+                                    <span class="tag">Ethics</span>
+                                </div>
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fas fa-external-link-alt"></i> Read Guide
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <i class="fas fa-flask"></i>
+                                    <h3>Experimentation Kit</h3>
+                                </div>
+                                <p>Jupyter notebooks for data exploration, model prototyping, and result visualization</p>
+                                <div class="resource-tags">
+                                    <span class="tag">Jupyter</span>
+                                    <span class="tag">EDA</span>
+                                    <span class="tag">Visualization</span>
+                                </div>
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IMSC Hackathon 2025</h3>
+                    <p>Innovation in Machine Learning and Scientific Computing</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IMSC Hackathon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

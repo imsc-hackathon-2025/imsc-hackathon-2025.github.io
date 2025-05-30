@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate+ Track - IMSC Hackathon 2025</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><h2>IMSC Hackathon 2025</h2></a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="high-school-consolidated.html" class="nav-link">High School</a>
+                <a href="undergraduate-consolidated.html" class="nav-link">Undergraduate</a>
+                <a href="graduate-plus-consolidated.html" class="nav-link active">Graduate+</a>
+                <a href="organizers.html" class="nav-link">Organizers</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Track Header -->
+    <section id="overview" class="track-header">
+        <div class="container">
+            <div class="track-hero">
+                <div class="track-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h1>Graduate+ Track</h1>
+                <p class="track-subtitle">Pushing the boundaries of research and innovation</p>
+                <p class="track-description">
+                    The most challenging track designed for graduate students, PhD candidates, researchers, 
+                    and industry professionals. Focus on cutting-edge research, novel algorithms, and 
+                    breakthrough innovations with potential for real-world impact and publication.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Navigation -->
+    <section class="section-nav sticky">
+        <div class="container">
+            <div class="section-nav-links">
+                <a href="#overview" class="section-nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="#dataset" class="section-nav-link">
+                    <i class="fas fa-database"></i>
+                    <span>Dataset</span>
+                </a>
+                <a href="#timeline" class="section-nav-link">
+                    <i class="fas fa-clock"></i>
+                    <span>Timeline</span>
+                </a>
+                <a href="#criteria" class="section-nav-link">
+                    <i class="fas fa-clipboard-check"></i>
+                    <span>Criteria</span>
+                </a>
+                <a href="#leaderboard" class="section-nav-link">
+                    <i class="fas fa-trophy"></i>
+                    <span>Leaderboard</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track Overview Content -->
+    <section class="track-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-main">
+                    <div class="track-info">
+                        <h2>Track Overview</h2>
+                        <p>The Graduate+ Track represents the pinnacle of competitive research and development. Participants tackle complex, multi-dimensional problems that require deep domain expertise, advanced computational methods, and innovative thinking.</p>
+                        
+                        <div class="track-features">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-microscope"></i>
+                                </div>
+                                <h3>Research Focus</h3>
+                                <p>Emphasis on novel research contributions with potential for academic publication.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h3>Advanced Methods</h3>
+                                <p>Utilize state-of-the-art AI/ML techniques and cutting-edge technologies.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <h3>Global Impact</h3>
+                                <p>Address challenges with significant societal and scientific implications.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="requirements-section">
+                        <h2>Requirements</h2>
+                        <div class="requirements-grid">
+                            <div class="requirement-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <h3>Eligibility</h3>
+                                <ul>
+                                    <li>Graduate students, PhD candidates, or professionals</li>
+                                    <li>Postdocs and research scientists welcome</li>
+                                    <li>Industry professionals with advanced degrees</li>
+                                </ul>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <h3>Technical</h3>
+                                <ul>
+                                    <li>Advanced programming and algorithmic skills</li>
+                                    <li>Experience with research methodologies</li>
+                                    <li>Deep learning and AI/ML expertise preferred</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Facts</h3>
+                        <ul class="fact-list">
+                            <li><i class="fas fa-calendar"></i> Duration: 48 hours</li>
+                            <li><i class="fas fa-users"></i> Team size: 2-4 members</li>
+                            <li><i class="fas fa-trophy"></i> Prizes: $25,000 total</li>
+                            <li><i class="fas fa-scroll"></i> Publication opportunities</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Status</h3>
+                        <div class="status-indicator">
+                            <div class="status-item">
+                                <span class="status-label">Registration</span>
+                                <span class="status-value">Open</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Participants</span>
+                                <span class="status-value">24/50</span>
+                            </div>
+                        </div>
+                        <div class="contact-links">
+                            <a href="mailto:graduate@imsc-hackathon.org">
+                                <i class="fas fa-envelope"></i> Contact Track Lead
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-discord"></i> Join Research Discord
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dataset Section -->
+    <section id="dataset" class="section-content">
+        <div class="container">
+            <div class="content-header">
+                <h1 class="content-title">
+                    <i class="fas fa-database"></i>
+                    Dataset & Challenge
+                </h1>
+                <p class="content-subtitle">Climate Intelligence & Earth System Modeling Challenge</p>
+            </div>
+
+            <div class="content-grid">
+                <div class="content-main">
+                    <div class="dataset-overview">
+                        <h2>Challenge Overview</h2>
+                        <div class="challenge-description">
+                            <p>Develop advanced AI models to understand and predict climate patterns using multi-modal Earth observation data. Create novel deep learning architectures that can process satellite imagery, atmospheric data, ocean measurements, and ground-based sensors to provide insights into climate change impacts and future projections.</p>
+                            
+                            <div class="challenge-goals">
+                                <h3><i class="fas fa-bullseye"></i> Research Objectives</h3>
+                                <ul>
+                                    <li>Develop novel multimodal fusion architectures for Earth system modeling</li>
+                                    <li>Create interpretable AI models for climate pattern analysis</li>
+                                    <li>Achieve state-of-the-art performance on climate prediction benchmarks</li>
+                                    <li>Design scalable systems for processing petabyte-scale Earth observation data</li>
+                                    <li>Contribute research-grade innovations with publication potential</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dataset-structure">
+                        <h2><i class="fas fa-sitemap"></i> Dataset Structure</h2>
+                        <div class="structure-grid">
+                            <div class="structure-card">
+                                <div class="card-header">
+                                    <i class="fas fa-satellite"></i>
+                                    <h3>satellite_imagery/</h3>
+                                </div>
+                                <p><strong>Size:</strong> 2.5 TB | <strong>Images:</strong> 15M+</p>
+                                <p>Multi-spectral satellite imagery from multiple missions (Landsat, Sentinel, MODIS)</p>
+                                <div class="columns-list">
+                                    <span class="column-tag">RGB + NIR bands</span>
+                                    <span class="column-tag">Temperature data</span>
+                                    <span class="column-tag">Cloud masks</span>
+                                    <span class="column-tag">Land cover labels</span>
+                                    <span class="column-tag">Change detection</span>
+                                </div>
+                            </div>
+                            
+                            <div class="structure-card">
+                                <div class="card-header">
+                                    <i class="fas fa-cloud"></i>
+                                    <h3>atmospheric_data/</h3>
+                                </div>
+                                <p><strong>Size:</strong> 850 GB | <strong>Records:</strong> 50M+</p>
+                                <p>Global atmospheric measurements and reanalysis data</p>
+                                <div class="columns-list">
+                                    <span class="column-tag">Pressure levels</span>
+                                    <span class="column-tag">Wind vectors</span>
+                                    <span class="column-tag">Humidity profiles</span>
+                                    <span class="column-tag">Precipitation</span>
+                                    <span class="column-tag">Aerosol data</span>
+                                </div>
+                            </div>
+                            
+                            <div class="structure-card">
+                                <div class="card-header">
+                                    <i class="fas fa-water"></i>
+                                    <h3>ocean_measurements/</h3>
+                                </div>
+                                <p><strong>Size:</strong> 1.2 TB | <strong>Records:</strong> 25M+</p>
+                                <p>Ocean temperature, salinity, and current measurements</p>
+                                <div class="columns-list">
+                                    <span class="column-tag">SST anomalies</span>
+                                    <span class="column-tag">Ocean currents</span>
+                                    <span class="column-tag">Salinity profiles</span>
+                                    <span class="column-tag">Sea level data</span>
+                                    <span class="column-tag">Ice coverage</span>
+                                </div>
+                            </div>
+
+                            <div class="structure-card">
+                                <div class="card-header">
+                                    <i class="fas fa-thermometer-half"></i>
+                                    <h3>ground_stations/</h3>
+                                </div>
+                                <p><strong>Size:</strong> 650 GB | <strong>Records:</strong> 100M+</p>
+                                <p>High-resolution ground-based measurements and station data</p>
+                                <div class="columns-list">
+                                    <span class="column-tag">Temperature time series</span>
+                                    <span class="column-tag">Precipitation gauges</span>
+                                    <span class="column-tag">Wind measurements</span>
+                                    <span class="column-tag">Solar radiation</span>
+                                    <span class="column-tag">Soil moisture</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-challenges">
+                        <h2><i class="fas fa-flask"></i> Research Challenges</h2>
+                        <div class="challenges-grid">
+                            <div class="challenge-card">
+                                <h3><i class="fas fa-puzzle-piece"></i> Multimodal Fusion</h3>
+                                <p>Develop novel architectures to effectively combine satellite imagery, atmospheric profiles, and ground measurements at different spatial and temporal resolutions.</p>
+                            </div>
+                            <div class="challenge-card">
+                                <h3><i class="fas fa-eye"></i> Interpretability</h3>
+                                <p>Create interpretable models that can explain climate phenomena and provide insights into physical processes driving observed patterns.</p>
+                            </div>
+                            <div class="challenge-card">
+                                <h3><i class="fas fa-expand-arrows-alt"></i> Scale & Efficiency</h3>
+                                <p>Handle massive-scale data processing while maintaining computational efficiency and enabling real-time inference capabilities.</p>
+                            </div>
+                            <div class="challenge-card">
+                                <h3><i class="fas fa-balance-scale"></i> Uncertainty Quantification</h3>
+                                <p>Develop methods to quantify and communicate uncertainty in climate predictions and handle missing or noisy data.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-sidebar">
+                    <div class="sidebar-card dataset-card">
+                        <div class="card-header">
+                            <i class="fas fa-info-circle"></i>
+                            <h4>Dataset Info</h4>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Total Size</span>
+                            <span class="stat-value">5.2 TB</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Time Range</span>
+                            <span class="stat-value">1980-2024</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Coverage</span>
+                            <span class="stat-value">Global</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Resolution</span>
+                            <span class="stat-value">1km-50km</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <div class="card-header">
+                            <i class="fas fa-server"></i>
+                            <h4>Compute Resources</h4>
+                        </div>
+                        <p>Access to high-performance computing clusters with GPUs for large-scale model training.</p>
+                        <a href="#" class="btn btn-secondary btn-small">
+                            <i class="fas fa-rocket"></i> Request HPC Access
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section-content">
+        <div class="container">
+            <div class="content-header">
+                <h1 class="content-title">
+                    <i class="fas fa-calendar-alt"></i>
+                    Timeline & Schedule
+                </h1>
+                <p class="content-subtitle">48-hour research-intensive competition</p>
+            </div>
+
+            <div class="content-grid">
+                <div class="content-main">
+                    <div class="timeline-overview">
+                        <h2>Competition Overview</h2>
+                        <div class="overview-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3>Duration</h3>
+                                    <p>48 Hours</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-calendar-day"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3>Start Date</h3>
+                                    <p>March 15, 2025</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3>Max Teams</h3>
+                                    <p>12 Teams</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-phases">
+                        <h2><i class="fas fa-timeline"></i> Research Phases</h2>
+                        <div class="phase-timeline">
+                            <div class="phase-item">
+                                <div class="phase-marker">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="phase-content">
+                                    <h3>Phase 1: Research Design & Planning</h3>
+                                    <p class="phase-time">March 15, 2025 - 6:00 AM to 2:00 PM</p>
+                                    <ul>
+                                        <li>Technical keynote and problem deep-dive</li>
+                                        <li>Dataset exploration and baseline establishment</li>
+                                        <li>Research hypothesis formulation</li>
+                                        <li>Experimental design and methodology planning</li>
+                                        <li>Team strategy and role allocation</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="phase-item">
+                                <div class="phase-marker">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="phase-content">
+                                    <h3>Phase 2: Model Development & Experimentation</h3>
+                                    <p class="phase-time">March 15, 2025 - 2:00 PM to March 16, 2025 - 6:00 PM</p>
+                                    <ul>
+                                        <li>Algorithm design and implementation</li>
+                                        <li>Large-scale model training and optimization</li>
+                                        <li>Ablation studies and hyperparameter tuning</li>
+                                        <li>Regular research progress reviews</li>
+                                        <li>Expert mentorship sessions</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="phase-item">
+                                <div class="phase-marker">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="phase-content">
+                                    <h3>Phase 3: Analysis & Validation</h3>
+                                    <p class="phase-time">March 16, 2025 - 6:00 PM to March 17, 2025 - 2:00 PM</p>
+                                    <ul>
+                                        <li>Results analysis and interpretation</li>
+                                        <li>Statistical significance testing</li>
+                                        <li>Model comparison and benchmarking</li>
+                                        <li>Research paper draft preparation</li>
+                                        <li>Visualization and presentation creation</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="phase-item">
+                                <div class="phase-marker">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="phase-content">
+                                    <h3>Phase 4: Research Presentation & Review</h3>
+                                    <p class="phase-time">March 17, 2025 - 2:00 PM to 10:00 PM</p>
+                                    <ul>
+                                        <li>Final submission and code freeze</li>
+                                        <li>15-minute research presentations</li>
+                                        <li>Peer review and expert panel evaluation</li>
+                                        <li>Publication committee review</li>
+                                        <li>Awards ceremony and publication announcements</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-sidebar">
+                    <div class="sidebar-card countdown-card">
+                        <div class="card-header">
+                            <i class="fas fa-stopwatch"></i>
+                            <h4>Next Deadline</h4>
+                        </div>
+                        <div class="countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-number">15</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number">07</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number">23</span>
+                                <span class="countdown-label">Minutes</span>
+                            </div>
+                        </div>
+                        <p class="countdown-event">Registration Deadline</p>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <div class="card-header">
+                            <i class="fas fa-university"></i>
+                            <h4>Research Support</h4>
+                        </div>
+                        <p>Access to academic databases, research tools, and expert consultation.</p>
+                        <a href="#" class="btn btn-secondary btn-small">
+                            <i class="fas fa-book"></i> Research Resources
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Criteria Section -->
+    <section id="criteria" class="section-content">
+        <div class="container">
+            <div class="content-header">
+                <h1 class="content-title">
+                    <i class="fas fa-clipboard-check"></i>
+                    Evaluation Criteria
+                </h1>
+                <p class="content-subtitle">Research-grade evaluation standards</p>
+            </div>
+
+            <div class="content-grid">
+                <div class="content-main">
+                    <div class="criteria-overview">
+                        <h2>Evaluation Process</h2>
+                        <p>Projects undergo rigorous peer review similar to academic conferences. Evaluation includes technical merit, novelty, experimental rigor, and potential impact. Top submissions may be recommended for publication in partner journals.</p>
+                    </div>
+
+                    <div class="scoring-breakdown">
+                        <h2><i class="fas fa-chart-pie"></i> Research Evaluation Framework</h2>
+                        <div class="score-cards">
+                            <div class="score-card">
+                                <div class="score-header">
+                                    <h3>Technical Innovation</h3>
+                                    <span class="score-weight">30%</span>
+                                </div>
+                                <ul>
+                                    <li>Novelty of proposed methods and algorithms</li>
+                                    <li>Technical depth and sophistication</li>
+                                    <li>Algorithmic contributions and improvements</li>
+                                    <li>Computational efficiency and scalability</li>
+                                </ul>
+                            </div>
+
+                            <div class="score-card">
+                                <div class="score-header">
+                                    <h3>Scientific Rigor</h3>
+                                    <span class="score-weight">25%</span>
+                                </div>
+                                <ul>
+                                    <li>Experimental design and methodology</li>
+                                    <li>Statistical analysis and significance testing</li>
+                                    <li>Proper baselines and ablation studies</li>
+                                    <li>Reproducibility and code quality</li>
+                                </ul>
+                            </div>
+
+                            <div class="score-card">
+                                <div class="score-header">
+                                    <h3>Impact & Significance</h3>
+                                    <span class="score-weight">25%</span>
+                                </div>
+                                <ul>
+                                    <li>Potential for real-world climate impact</li>
+                                    <li>Advancement of scientific understanding</li>
+                                    <li>Broader applicability and generalization</li>
+                                    <li>Societal and policy implications</li>
+                                </ul>
+                            </div>
+
+                            <div class="score-card">
+                                <div class="score-header">
+                                    <h3>Research Communication</h3>
+                                    <span class="score-weight">20%</span>
+                                </div>
+                                <ul>
+                                    <li>Quality of research presentation</li>
+                                    <li>Clear articulation of contributions</li>
+                                    <li>Professional documentation and writing</li>
+                                    <li>Effective visualization and explanation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="submission-requirements">
+                        <h2><i class="fas fa-scroll"></i> Research Deliverables</h2>
+                        <div class="requirements-tabs">
+                            <div class="tab-buttons">
+                                <button class="tab-btn active" data-tab="research">Research Paper</button>
+                                <button class="tab-btn" data-tab="code">Code & Data</button>
+                                <button class="tab-btn" data-tab="presentation">Presentation</button>
+                            </div>
+                            
+                            <div class="tab-content active" id="research">
+                                <h3>Research Paper Requirements</h3>
+                                <ul>
+                                    <li>8-page research paper in conference format (ACM/IEEE style)</li>
+                                    <li>Abstract, introduction, related work, methodology</li>
+                                    <li>Experimental setup, results, and statistical analysis</li>
+                                    <li>Discussion of limitations and future work</li>
+                                    <li>Complete bibliography with relevant citations</li>
+                                    <li>Supplementary materials and appendices</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-content" id="code">
+                                <h3>Code & Data Requirements</h3>
+                                <ul>
+                                    <li>Complete, well-documented source code</li>
+                                    <li>Reproducible experimental pipeline</li>
+                                    <li>Containerized environment (Docker/Singularity)</li>
+                                    <li>Comprehensive dataset documentation</li>
+                                    <li>Performance benchmarks and evaluation scripts</li>
+                                    <li>Version control with detailed commit history</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tab-content" id="presentation">
+                                <h3>Research Presentation Requirements</h3>
+                                <ul>
+                                    <li>15-minute research presentation</li>
+                                    <li>Technical motivation and problem significance</li>
+                                    <li>Methodology and experimental design</li>
+                                    <li>Results analysis and interpretation</li>
+                                    <li>Contributions and future research directions</li>
+                                    <li>Q&A session with expert panel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Distinguished Review Panel</h3>
+                        <div class="judge-list">
+                            <div class="judge-item">
+                                <h4>Dr. Maria Gonzalez</h4>
+                                <p>Climate Scientist, NASA Goddard</p>
+                            </div>
+                            <div class="judge-item">
+                                <h4>Prof. David Chen</h4>
+                                <p>AI for Earth Systems, MIT</p>
+                            </div>
+                            <div class="judge-item">
+                                <h4>Dr. Anna Petrov</h4>
+                                <p>Principal Scientist, Microsoft Research</p>
+                            </div>
+                            <div class="judge-item">
+                                <h4>Prof. James Wilson</h4>
+                                <p>Atmospheric Physics, Caltech</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Publication Opportunities</h3>
+                        <ul>
+                            <li>Top papers recommended for journal submission</li>
+                            <li>Workshop proceedings publication</li>
+                            <li>Collaboration with research institutions</li>
+                            <li>Conference presentation opportunities</li>
+                            <li>Open-source project contributions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="section-content">
+        <div class="container">
+            <div class="content-header">
+                <h1 class="content-title">
+                    <i class="fas fa-trophy"></i>
+                    Research Rankings
+                </h1>
+                <p class="content-subtitle">Performance metrics and research impact scores</p>
+            </div>
+
+            <div class="leaderboard-stats">
+                <div class="stat-item">
+                    <h3>Research Teams</h3>
+                    <span class="stat-number">12</span>
+                </div>
+                <div class="stat-item">
+                    <h3>Submissions</h3>
+                    <span class="stat-number">0</span>
+                </div>
+                <div class="stat-item">
+                    <h3>Best Performance</h3>
+                    <span class="stat-number">--</span>
+                </div>
+                <div class="stat-item">
+                    <h3>Research Hours</h3>
+                    <span class="stat-number">48h</span>
+                </div>
+            </div>
+
+            <div class="leaderboard-controls">
+                <div class="filter-options">
+                    <button class="filter-btn active">All Teams</button>
+                    <button class="filter-btn">Research Institutions</button>
+                    <button class="filter-btn">Industry Labs</button>
+                </div>
+                <div class="sort-options">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="overall">Overall Score</option>
+                        <option value="technical">Technical Merit</option>
+                        <option value="innovation">Innovation</option>
+                        <option value="impact">Impact Score</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="leaderboard-container">
+                <div class="no-data">
+                    <div class="no-data-message">
+                        <div class="no-data-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Research Competition Awaits</h3>
+                        <p>The research rankings will showcase breakthrough innovations and novel contributions. Evaluation includes peer review scores and impact metrics.</p>
+                        
+                        <div class="timeline-preview">
+                            <h4>Evaluation Metrics:</h4>
+                            <div class="timeline-item">
+                                <strong>Technical Merit:</strong> Algorithmic innovation and rigor
+                            </div>
+                            <div class="timeline-item">
+                                <strong>Scientific Impact:</strong> Potential for advancing climate science
+                            </div>
+                            <div class="timeline-item">
+                                <strong>Research Quality:</strong> Methodology and experimental design
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="btn btn-primary pre-register-btn">
+                            <i class="fas fa-user-plus"></i> Register Research Team
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IMSC Hackathon 2025</h3>
+                    <p>Empowering the next generation of innovators through technology and collaboration.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="organizers.html">Organizers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Tracks</h4>
+                    <ul>
+                        <li><a href="high-school-consolidated.html">High School</a></li>
+                        <li><a href="undergraduate-consolidated.html">Undergraduate</a></li>
+                        <li><a href="graduate-plus-consolidated.html">Graduate+</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IMSC Hackathon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        // Section navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const sectionNavLinks = document.querySelectorAll('.section-nav-link');
+            const sections = document.querySelectorAll('section[id]');
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            // Section navigation active state
+            function updateActiveSection() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                sectionNavLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveSection);
+
+            // Tab functionality
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.getAttribute('data-tab');
+                    
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    button.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+
+            // Sticky section navigation
+            const sectionNav = document.querySelector('.section-nav');
+            const stickyOffset = sectionNav.offsetTop;
+
+            function handleStickyNav() {
+                if (window.pageYOffset > stickyOffset) {
+                    sectionNav.classList.add('sticky-active');
+                } else {
+                    sectionNav.classList.remove('sticky-active');
+                }
+            }
+
+            window.addEventListener('scroll', handleStickyNav);
+        });
+    </script>
+</body>
+</html>

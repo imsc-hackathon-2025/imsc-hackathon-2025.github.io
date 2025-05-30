@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset - High School Track - IMSC Hackathon 2025</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><i class="fas fa-code"></i> IMSC Hackathon 2025</h2>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="../../index.html#about">About</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle active">High School <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../high-school-consolidated.html">Overview</a></li>
+                        <li><a href="../high-school-consolidated.html#dataset">Dataset</a></li>
+                        <li><a href="../high-school-consolidated.html#timeline">Timeline</a></li>
+                        <li><a href="../high-school-consolidated.html#criteria">Criteria</a></li>
+                        <li><a href="../high-school-consolidated.html#leaderboard">Leaderboard</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">UnderGraduate <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../undergraduate-consolidated.html">Overview</a></li>
+                        <li><a href="../undergraduate-consolidated.html#dataset">Dataset</a></li>
+                        <li><a href="../undergraduate-consolidated.html#timeline">Timeline</a></li>
+                        <li><a href="../undergraduate-consolidated.html#criteria">Criteria</a></li>
+                        <li><a href="../undergraduate-consolidated.html#leaderboard">Leaderboard</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Graduate+ <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../graduate-plus-consolidated.html">Overview</a></li>
+                        <li><a href="../graduate-plus-consolidated.html#dataset">Dataset</a></li>
+                        <li><a href="../graduate-plus-consolidated.html#timeline">Timeline</a></li>
+                        <li><a href="../graduate-plus-consolidated.html#criteria">Criteria</a></li>
+                        <li><a href="../graduate-plus-consolidated.html#leaderboard">Leaderboard</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <span class="separator">/</span>
+                    <a href="../high-school-consolidated.html">High School Track</a>
+                    <span class="separator">/</span>
+                    <span class="current">Dataset</span>
+                </div>
+                <h1 class="page-title">
+                    <i class="fas fa-database track-icon high-school"></i>
+                    High School Dataset
+                </h1>
+                <p class="page-subtitle">Smart City Traffic Prediction Challenge</p>
+            </div>
+
+            <div class="page-layout">
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <h3>Track Navigation</h3>
+                        <ul>
+                            <li><a href="../high-school-consolidated.html"><i class="fas fa-home"></i> Overview</a></li>
+                            <li><a href="../high-school-consolidated.html#dataset" class="active"><i class="fas fa-database"></i> Dataset</a></li>
+                            <li><a href="../high-school-consolidated.html#timeline"><i class="fas fa-calendar"></i> Timeline</a></li>
+                            <li><a href="../high-school-consolidated.html#criteria"><i class="fas fa-gavel"></i> Criteria</a></li>
+                            <li><a href="../high-school-consolidated.html#leaderboard"><i class="fas fa-trophy"></i> Leaderboard</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="sidebar-card dataset-card">
+                        <div class="card-header">
+                            <i class="fas fa-info-circle"></i>
+                            <h4>Dataset Info</h4>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Size</span>
+                            <span class="stat-value">2.5 GB</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Records</span>
+                            <span class="stat-value">100K+</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Format</span>
+                            <span class="stat-value">CSV, JSON</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">License</span>
+                            <span class="stat-value">CC BY 4.0</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <div class="card-header">
+                            <i class="fas fa-download"></i>
+                            <h4>Download</h4>
+                        </div>
+                        <p>Register for the hackathon to access the dataset!</p>
+                        <a href="#" class="btn btn-primary btn-small">
+                            <i class="fas fa-lock"></i> Register to Download
+                        </a>
+                    </div>
+                </aside>
+
+                <div class="content">
+                    <section class="dataset-overview">
+                        <h2>Challenge Overview</h2>
+                        <div class="challenge-description">
+                            <p>Welcome to the Smart City Traffic Prediction Challenge! Your task is to develop a machine learning model that can predict traffic congestion levels in urban areas using historical traffic data, weather conditions, and city events.</p>
+                            
+                            <div class="challenge-goals">
+                                <h3><i class="fas fa-bullseye"></i> Goals</h3>
+                                <ul>
+                                    <li>Predict traffic congestion levels for the next 2 hours</li>
+                                    <li>Achieve minimum 75% accuracy on test data</li>
+                                    <li>Create visualizations showing traffic patterns</li>
+                                    <li>Build a simple web interface for predictions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dataset-structure">
+                        <h2><i class="fas fa-sitemap"></i> Dataset Structure</h2>
+                        <div class="structure-grid">
+                            <div class="structure-card">
+                                <div class="card-header">
+                                    <i class="fas fa-table"></i>
+                                    <h3>traffic_data.csv</h3>
+                                </div>
+                                <p><strong>Size:</strong> 1.8 GB | <strong>Records:</strong> 850,000</p>
+                                <p>Historical traffic flow data from 500 intersections across the city</p>
+                                <div class="columns-list">
+                                    <span class="column-tag">timestamp</span>
+                                    <span class="column-tag">intersection_id</span>
+                                    <span class="column-tag">vehicle_count</span>
+                                    <span class="column-tag">avg_speed</span>
+                                    <span class="column-tag">congestion_level</span>
+                                </div>
+                            </div>
+                            
+                            <div class="structure-card">
+                                <div class="card-header">
+                                    <i class="fas fa-cloud-sun"></i>
+                                    <h3>weather_data.csv</h3>
+                                </div>
+                                <p><strong>Size:</strong> 0.5 GB | <strong>Records:</strong> 175,000</p>
+                                <p>Weather conditions affecting traffic patterns</p>
+                                <div class="columns-list">
+                                    <span class="column-tag">timestamp</span>
+                                    <span class="column-tag">temperature</span>
+                                    <span class="column-tag">humidity</span>
+                                    <span class="column-tag">precipitation</span>
+                                    <span class="column-tag">visibility</span>
+                                </div>
+                            </div>
+                            
+                            <div class="structure-card">
+                                <div class="card-header">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <h3>events_data.json</h3>
+                                </div>
+                                <p><strong>Size:</strong> 0.2 GB | <strong>Records:</strong> 5,000</p>
+                                <p>City events that impact traffic flow</p>
+                                <div class="columns-list">
+                                    <span class="column-tag">event_id</span>
+                                    <span class="column-tag">event_type</span>
+                                    <span class="column-tag">start_time</span>
+                                    <span class="column-tag">location</span>
+                                    <span class="column-tag">impact_radius</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sample-data">
+                        <h2><i class="fas fa-eye"></i> Sample Data Preview</h2>
+                        
+                        <div class="data-preview">
+                            <h3>Traffic Data Sample</h3>
+                            <div class="code-block">
+                                <pre><code>timestamp,intersection_id,vehicle_count,avg_speed,congestion_level
+2024-01-15 08:30:00,INT_001,45,25.5,2
+2024-01-15 08:45:00,INT_001,67,18.2,3
+2024-01-15 09:00:00,INT_001,89,12.1,4
+2024-01-15 09:15:00,INT_001,72,15.8,3
+2024-01-15 09:30:00,INT_001,54,22.3,2</code></pre>
+                            </div>
+                            
+                            <h3>Weather Data Sample</h3>
+                            <div class="code-block">
+                                <pre><code>timestamp,temperature,humidity,precipitation,visibility
+2024-01-15 08:00:00,15.2,65,0.0,10.0
+2024-01-15 09:00:00,16.1,62,0.0,10.0
+2024-01-15 10:00:00,17.5,58,0.2,8.5</code></pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="data-features">
+                        <h2><i class="fas fa-chart-line"></i> Key Features</h2>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h3>Temporal Patterns</h3>
+                                <p>Data spans 2 years with hourly granularity, capturing daily, weekly, and seasonal patterns</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </div>
+                                <h3>Spatial Coverage</h3>
+                                <p>500 intersections across different city zones: downtown, residential, commercial, and industrial</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <h3>Multi-modal Data</h3>
+                                <p>Combines traffic sensors, weather stations, and event calendars for comprehensive analysis</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <h3>Balanced Dataset</h3>
+                                <p>Even distribution across congestion levels (1-5) and time periods for fair model training</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="evaluation-data">
+                        <h2><i class="fas fa-flask"></i> Evaluation Setup</h2>
+                        <div class="evaluation-info">
+                            <div class="eval-split">
+                                <h3>Data Split</h3>
+                                <div class="split-chart">
+                                    <div class="split-item train">
+                                        <span class="split-label">Training</span>
+                                        <span class="split-percentage">70%</span>
+                                    </div>
+                                    <div class="split-item validation">
+                                        <span class="split-label">Validation</span>
+                                        <span class="split-percentage">15%</span>
+                                    </div>
+                                    <div class="split-item test">
+                                        <span class="split-label">Test</span>
+                                        <span class="split-percentage">15%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="eval-metrics">
+                                <h3>Evaluation Metrics</h3>
+                                <ul>
+                                    <li><strong>Primary:</strong> Classification Accuracy</li>
+                                    <li><strong>Secondary:</strong> F1-Score (weighted)</li>
+                                    <li><strong>Bonus:</strong> Mean Absolute Error for regression</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="getting-started">
+                        <h2><i class="fas fa-rocket"></i> Getting Started</h2>
+                        <div class="starter-grid">
+                            <div class="starter-card">
+                                <div class="card-header">
+                                    <i class="fab fa-python"></i>
+                                    <h3>Python Starter Kit</h3>
+                                </div>
+                                <p>Complete Python environment with data loading utilities and baseline model</p>
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fas fa-download"></i> Download
+                                </a>
+                            </div>
+                            
+                            <div class="starter-card">
+                                <div class="card-header">
+                                    <i class="fas fa-book"></i>
+                                    <h3>Documentation</h3>
+                                </div>
+                                <p>Detailed data dictionary, API reference, and getting started guide</p>
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fas fa-external-link-alt"></i> View Docs
+                                </a>
+                            </div>
+                            
+                            <div class="starter-card">
+                                <div class="card-header">
+                                    <i class="fas fa-code"></i>
+                                    <h3>Example Code</h3>
+                                </div>
+                                <p>Jupyter notebooks with data exploration and baseline implementations</p>
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IMSC Hackathon 2025</h3>
+                    <p>Innovation in Machine Learning and Scientific Computing</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IMSC Hackathon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

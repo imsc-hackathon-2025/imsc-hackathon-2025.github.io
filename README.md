@@ -1,96 +1,221 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# IMSC Hackathon 2025 Website
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+A comprehensive, multi-track website for the IMSC Hackathon 2025 event. Built with vanilla HTML, CSS, and JavaScript for optimal performance and easy deployment on GitHub Pages.
 
-# Getting Started
+## 🎯 Features
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+- **Multi-Track Competition**: Separate tracks for High School, Undergraduate, and Graduate+ participants
+- **Modern Design**: Clean, professional interface with smooth animations
+- **Fully Responsive**: Works perfectly on desktop, tablet, and mobile devices
+- **Interactive Elements**: Smooth scrolling, hover effects, and dynamic leaderboards
+- **Comprehensive Content**: Complete information for each track including datasets, timelines, and criteria
+- **Optimized Performance**: Fast loading with minimal dependencies
+- **SEO Friendly**: Proper semantic HTML structure
+- **GitHub Pages Ready**: Direct deployment without build process
 
-See more info at https://academicpages.github.io/
+## 📱 Website Structure
 
-## Running locally
+### Main Pages
+- **Home**: Event overview with track selection and key information
+- **About**: Detailed information about the hackathon mission and goals
+- **Organizers**: Complete team information, advisory board, judges, and sponsors
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+### Competition Tracks
+Each track includes dedicated pages for:
 
-1. Clone the repository and made updates as detailed above.
+#### High School Track
+- **Overview**: Track introduction and requirements
+- **Dataset**: Simplified machine learning challenge
+- **Timeline**: 2-week competition schedule
+- **Criteria**: Evaluation based on accuracy and presentation
+- **Leaderboard**: Live rankings and submission tracking
 
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
+#### Undergraduate Track
+- **Overview**: Intermediate-level competition details
+- **Dataset**: Advanced machine learning problem
+- **Timeline**: 4-week development period
+- **Criteria**: Technical excellence and innovation focus
+- **Leaderboard**: Comprehensive evaluation metrics
 
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+#### Graduate+ Track
+- **Overview**: Research-level competition
+- **Dataset**: Complex, research-grade challenge
+- **Timeline**: 8-week development with peer review
+- **Criteria**: Research innovation and technical contribution
+- **Leaderboard**: Multi-phase evaluation with expert judging
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
+## 📁 File Structure
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
-
-```bash
-chmod -R 777 .
-docker compose up
+```
+imsc-hackathon-2025/
+├── index.html                 # Homepage
+├── README.md                  # Documentation
+├── assets/
+│   ├── css/
+│   │   └── styles.css        # Main stylesheet
+│   ├── js/
+│   │   └── script.js         # JavaScript functionality
+│   └── images/               # Image assets
+├── pages/
+│   ├── about.html           # About page
+│   ├── organizers.html      # Organizers and team info
+│   ├── high-school/
+│   │   ├── index.html       # High school track overview
+│   │   ├── dataset.html     # Dataset information
+│   │   ├── timeline.html    # Competition timeline
+│   │   ├── criteria.html    # Evaluation criteria
+│   │   └── leaderboard.html # Live leaderboard
+│   ├── undergraduate/
+│   │   ├── index.html       # Undergraduate track overview
+│   │   ├── dataset.html     # Dataset information
+│   │   ├── timeline.html    # Competition timeline
+│   │   ├── criteria.html    # Evaluation criteria
+│   │   └── leaderboard.html # Live leaderboard
+│   └── graduate-plus/
+│       ├── index.html       # Graduate+ track overview
+│       ├── dataset.html     # Dataset information
+│       ├── timeline.html    # Competition timeline
+│       ├── criteria.html    # Evaluation criteria
+│       └── leaderboard.html # Live leaderboard
 ```
 
-You should now be able to access the website from `localhost:4000`.
+## 🚀 Quick Start
 
-### Using the DevContainer in VS Code
+### Local Development
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/imsc-hackathon-2025.git
+cd imsc-hackathon-2025
+```
 
-# Maintenance
+2. Open `index.html` in your browser or use a local server:
+```bash
+# Using Python 3
+python -m http.server 8000
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+# Using Node.js (if you have live-server installed)
+npx live-server
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+# Using PHP
+php -S localhost:8000
+```
 
-## Bugfixes and enhancements
+3. Visit `http://localhost:8000` to view the website
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+### GitHub Pages Deployment
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+1. Push your code to a GitHub repository
+2. Go to repository Settings → Pages
+3. Select "Deploy from a branch" as source
+4. Choose `main` branch and `/ (root)` folder
+5. Your site will be available at `https://yourusername.github.io/imsc-hackathon-2025`
+
+## 🎨 Customization
+
+### Colors
+The website uses a purple gradient theme. To change colors, update the CSS variables in `styles.css`:
+
+```css
+/* Main gradient colors */
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+/* Update these hex codes to your preferred colors */
+```
+
+### Content
+Update the following files to customize content:
+
+- **Event Details**: Edit hero section in `index.html`
+- **Schedule**: Modify timeline events in the schedule section
+- **Prizes**: Update prize amounts and categories
+- **Sponsors**: Replace sponsor placeholders with actual logos
+- **Contact Info**: Update email, phone, and address
+
+### Images
+Add your images to an `images/` folder and update the references in:
+- Sponsor logos
+- Team photos
+- Event photos
+- Favicon
+
+## 📝 Content Updates
+
+### Event Information
+Update these key details in `index.html`:
+
+```html
+<!-- Hero section -->
+<h1 class="hero-title">IMSC Hackathon 2025</h1>
+<span>June 14-16, 2025</span>
+<span>USC Campus, Los Angeles</span>
+
+<!-- Contact information -->
+<p>info@imsc-hackathon.com</p>
+<p>+1 (555) 123-4567</p>
+```
+
+### Registration Link
+Update the registration button URL:
+
+```html
+<a href="https://forms.google.com/your-registration-form" class="btn btn-primary btn-large">Register Now</a>
+```
+
+## 🛠️ Technical Details
+
+### Dependencies
+- **Fonts**: Google Fonts (Inter)
+- **Icons**: Font Awesome 6.0
+- **Framework**: Vanilla HTML/CSS/JS (no build process required)
+
+### Browser Support
+- Chrome 60+
+- Firefox 60+
+- Safari 12+
+- Edge 79+
+
+### Performance
+- Optimized images and assets
+- Minimal JavaScript for fast loading
+- CSS animations with hardware acceleration
+- Responsive images for different screen sizes
+
+## 📱 Mobile Optimization
+
+The website is fully responsive with:
+- Mobile-first design approach
+- Touch-friendly navigation
+- Optimized font sizes and spacing
+- Hamburger menu for mobile devices
+- Fast loading on slower connections
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m 'Add feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📞 Support
+
+For questions about the website or event:
+- Email: info@imsc-hackathon.com
+- Phone: +1 (555) 123-4567
+- GitHub Issues: [Create an issue](https://github.com/yourusername/imsc-hackathon-2025/issues)
+
+## 🎉 Acknowledgments
+
+- Design inspired by modern tech conference websites
+- Icons provided by Font Awesome
+- Fonts by Google Fonts
+- Built with ❤️ for the developer community
 
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+**Ready to hack? Visit [imsc-hackathon-2025.github.io](https://imsc-hackathon-2025.github.io) to learn more!**
