@@ -17,27 +17,26 @@ A comprehensive, multi-track website for the IMSC Hackathon 2025 event. Built wi
 
 ### Main Pages
 - **Home**: Event overview with track selection and key information
-- **About**: Detailed information about the hackathon mission and goals
-- **Organizers**: Complete team information, advisory board, judges, and sponsors
+- **Organizers**: Complete team information and contact details
 
-### Competition Tracks
-Each track includes dedicated pages for:
+### Consolidated Competition Tracks
+Each track is now presented as a single comprehensive page with smooth section navigation:
 
-#### High School Track
+#### High School Track (Consolidated)
 - **Overview**: Track introduction and requirements
 - **Dataset**: Simplified machine learning challenge
 - **Timeline**: 2-week competition schedule
 - **Criteria**: Evaluation based on accuracy and presentation
 - **Leaderboard**: Live rankings and submission tracking
 
-#### Undergraduate Track
+#### Undergraduate Track (Consolidated)
 - **Overview**: Intermediate-level competition details
 - **Dataset**: Advanced machine learning problem
 - **Timeline**: 4-week development period
 - **Criteria**: Technical excellence and innovation focus
 - **Leaderboard**: Comprehensive evaluation metrics
 
-#### Graduate+ Track
+#### Graduate+ Track (Consolidated)
 - **Overview**: Research-level competition
 - **Dataset**: Complex, research-grade challenge
 - **Timeline**: 8-week development with peer review
@@ -48,35 +47,22 @@ Each track includes dedicated pages for:
 
 ```
 imsc-hackathon-2025/
-├── index.html                 # Homepage
-├── README.md                  # Documentation
+├── index.html                           # Homepage
+├── README.md                            # Main documentation
+├── GOOGLE-SHEETS-INTEGRATION.md         # Google Sheets setup guide
+├── IMPLEMENTATION-COMPLETE.md           # Implementation summary
+├── LEADERBOARD-SETUP.md                 # Leaderboard configuration guide
 ├── assets/
 │   ├── css/
-│   │   └── styles.css        # Main stylesheet
-│   ├── js/
-│   │   └── script.js         # JavaScript functionality
-│   └── images/               # Image assets
-├── pages/
-│   ├── about.html           # About page
-│   ├── organizers.html      # Organizers and team info
-│   ├── high-school/
-│   │   ├── index.html       # High school track overview
-│   │   ├── dataset.html     # Dataset information
-│   │   ├── timeline.html    # Competition timeline
-│   │   ├── criteria.html    # Evaluation criteria
-│   │   └── leaderboard.html # Live leaderboard
-│   ├── undergraduate/
-│   │   ├── index.html       # Undergraduate track overview
-│   │   ├── dataset.html     # Dataset information
-│   │   ├── timeline.html    # Competition timeline
-│   │   ├── criteria.html    # Evaluation criteria
-│   │   └── leaderboard.html # Live leaderboard
-│   └── graduate-plus/
-│       ├── index.html       # Graduate+ track overview
-│       ├── dataset.html     # Dataset information
-│       ├── timeline.html    # Competition timeline
-│       ├── criteria.html    # Evaluation criteria
-│       └── leaderboard.html # Live leaderboard
+│   │   └── styles.css                  # Main stylesheet with modern design
+│   └── js/
+│       ├── script.js                   # Core JavaScript functionality
+│       └── leaderboard.js              # Live leaderboard functionality
+└── pages/
+    ├── organizers.html                 # Organizers and team info
+    ├── high-school-consolidated.html   # Complete high school track
+    ├── undergraduate-consolidated.html # Complete undergraduate track
+    └── graduate-plus-consolidated.html # Complete graduate+ track
 ```
 
 ## 🚀 Quick Start
@@ -219,3 +205,51 @@ For questions about the website or event:
 ---
 
 **Ready to hack? Visit [imsc-hackathon-2025.github.io](https://imsc-hackathon-2025.github.io) to learn more!**
+
+## 🏆 Live Leaderboards
+
+Each track features a fully functional leaderboard system with:
+
+### Features
+- **Real-time Updates**: Automatic refresh every 30 seconds during competition
+- **Interactive Controls**: Filter by team categories and sort by different metrics
+- **Responsive Design**: Optimized for desktop and mobile viewing
+- **Demo Mode**: Preview functionality before competition starts
+- **Multiple Data Sources**: Supports Google Sheets, Firebase, Airtable, and JSON files
+
+### Current Status
+The leaderboards are implemented and ready to go live. Currently in demo mode showing sample data.
+
+### Setup Options
+Choose from 5 free implementation options:
+
+1. **Google Sheets + SheetDB** (Recommended)
+   - Free tier: 200 requests/month
+   - Easy setup in 5 minutes
+   - Real-time collaboration
+
+2. **Firebase Realtime Database**
+   - 1GB storage, 10GB bandwidth/month free
+   - True real-time updates
+   - Best for live competitions
+
+3. **JSON Files + GitHub**
+   - Completely free
+   - Simple file-based updates
+   - Perfect for smaller events
+
+4. **Airtable API**
+   - 1,000 requests/month free
+   - Database-like interface
+   - Good for data management
+
+5. **Supabase**
+   - 500MB database, 2GB bandwidth/month free
+   - PostgreSQL with real-time features
+   - Modern alternative to Firebase
+
+### Quick Setup
+1. Follow instructions in `LEADERBOARD-SETUP.md`
+2. Choose your preferred data source
+3. Update API configuration in `assets/js/leaderboard.js`
+4. Set `isLive = true` to enable live mode

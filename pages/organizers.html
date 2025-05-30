@@ -3,34 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organizers | IMSC Hackathon 2025</title>
+    <title>Organizers - IMSC Hackathon 2025</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a href="../index.html">IMSC Hackathon 2025</a>
+            <div class="nav-brand">
+                <a href="../index.html"><h2>IMSC Hackathon 2025</h2></a>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">Tracks</a>
-                    <div class="dropdown-content">
-                        <a href="high-school-consolidated.html">High School</a>
-                        <a href="undergraduate-consolidated.html">Undergraduate</a>
-                        <a href="graduate-plus-consolidated.html">Graduate+</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="organizers.html" class="nav-link active">Organizers</a>
-                </li>
-            </ul>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <!-- <a href="about.html" class="nav-link">About</a> -->
+                <a href="high-school-consolidated.html" class="nav-link">High School</a>
+                <a href="undergraduate-consolidated.html" class="nav-link">Undergraduate</a>
+                <a href="graduate-plus-consolidated.html" class="nav-link">Graduate+</a>
+                <a href="organizers.html" class="nav-link active">Organizers</a>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -39,19 +31,30 @@
         </div>
     </nav>
 
+    <!-- Organizers Header -->
+    <section class="track-header">
+        <div class="container">
+            <div class="track-hero">
+                <div class="track-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h1>Meet the Organizing Team</h1>
+                <p class="track-subtitle">Dedicated leaders driving innovation in AI education</p>
+                <p class="track-description">
+                    The IMSC Hackathon 2025 is brought to you by a passionate team of researchers, 
+                    educators, and student leaders committed to advancing machine learning education 
+                    and fostering the next generation of AI innovators.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <main class="main-content">
         <div class="container">
-            <section class="organizers-header">
-                <h1>Meet the Organizing Team</h1>
-                <p class="organizers-subtitle">
-                    The IMSC Hackathon 2025 is organized by a dedicated team of researchers, educators, and industry professionals committed to advancing machine learning education and research.
-                </p>
-            </section>
-
             <section class="organizing-committee">
-                <h2>Organizing Committee</h2>
-                <div class="organizers-grid">
-                    <div class="organizer-card">
+                <div class="organizers-grid modern-grid">
+                    <!-- Professor 1: General Chair -->
+                    <div class="organizer-card modern-card">
                         <div class="organizer-photo">
                             <img src="../assets/images/organizer-placeholder.jpg" alt="Dr. Sarah Chen" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="photo-placeholder">SC</div>
@@ -59,18 +62,26 @@
                         <div class="organizer-info">
                             <h3>Dr. Sarah Chen</h3>
                             <p class="organizer-title">General Chair</p>
-                            <p class="organizer-affiliation">Professor, Computer Science<br>USC Information Sciences Institute</p>
+                            <p class="organizer-role">Professor</p>
+                            <p class="organizer-affiliation">Computer Science, USC Information Sciences Institute</p>
                             <div class="organizer-bio">
-                                <p>Dr. Chen is a leading researcher in machine learning and artificial intelligence with over 15 years of experience. She has published 100+ papers in top-tier conferences and journals.</p>
+                                <p>Dr. Chen is a leading researcher in machine learning and artificial intelligence with over 15 years of experience. She has published 100+ papers in top-tier conferences and journals, focusing on deep learning architectures and their applications in computer vision and natural language processing.</p>
                             </div>
                             <div class="organizer-contact">
-                                <a href="mailto:sarah.chen@isi.edu">📧 sarah.chen@isi.edu</a>
-                                <a href="https://isi.edu/~schen" target="_blank">🌐 Personal Page</a>
+                                <a href="mailto:sarah.chen@isi.edu" class="contact-btn">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>sarah.chen@isi.edu</span>
+                                </a>
+                                <a href="https://isi.edu/~schen" target="_blank" class="contact-btn">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Personal Page</span>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="organizer-card">
+                    <!-- Professor 2: Technical Chair -->
+                    <div class="organizer-card modern-card">
                         <div class="organizer-photo">
                             <img src="../assets/images/organizer-placeholder.jpg" alt="Dr. Michael Rodriguez" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="photo-placeholder">MR</div>
@@ -78,75 +89,26 @@
                         <div class="organizer-info">
                             <h3>Dr. Michael Rodriguez</h3>
                             <p class="organizer-title">Technical Chair</p>
-                            <p class="organizer-affiliation">Associate Professor, Electrical Engineering<br>University of Southern California</p>
+                            <p class="organizer-role">Associate Professor</p>
+                            <p class="organizer-affiliation">Electrical Engineering, University of Southern California</p>
                             <div class="organizer-bio">
-                                <p>Dr. Rodriguez specializes in computer vision and deep learning. He has extensive experience in organizing technical competitions and educational events.</p>
+                                <p>Dr. Rodriguez specializes in computer vision and deep learning with a focus on real-time applications and edge computing. He has extensive experience in organizing technical competitions and educational events, bridging the gap between academic research and practical implementation.</p>
                             </div>
                             <div class="organizer-contact">
-                                <a href="mailto:mrodriguez@usc.edu">📧 mrodriguez@usc.edu</a>
-                                <a href="https://ee.usc.edu/~mrodriguez" target="_blank">🌐 Personal Page</a>
+                                <a href="mailto:mrodriguez@usc.edu" class="contact-btn">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>mrodriguez@usc.edu</span>
+                                </a>
+                                <a href="https://ee.usc.edu/~mrodriguez" target="_blank" class="contact-btn">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Personal Page</span>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="organizer-card">
-                        <div class="organizer-photo">
-                            <img src="../assets/images/organizer-placeholder.jpg" alt="Dr. Emily Zhang" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            <div class="photo-placeholder">EZ</div>
-                        </div>
-                        <div class="organizer-info">
-                            <h3>Dr. Emily Zhang</h3>
-                            <p class="organizer-title">Education Chair</p>
-                            <p class="organizer-affiliation">Assistant Professor, Computer Science<br>USC Viterbi School of Engineering</p>
-                            <div class="organizer-bio">
-                                <p>Dr. Zhang focuses on educational technology and machine learning pedagogy. She has developed innovative curricula for AI education at multiple levels.</p>
-                            </div>
-                            <div class="organizer-contact">
-                                <a href="mailto:emily.zhang@usc.edu">📧 emily.zhang@usc.edu</a>
-                                <a href="https://cs.usc.edu/~ezhang" target="_blank">🌐 Personal Page</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="organizer-card">
-                        <div class="organizer-photo">
-                            <img src="../assets/images/organizer-placeholder.jpg" alt="Alex Thompson" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            <div class="photo-placeholder">AT</div>
-                        </div>
-                        <div class="organizer-info">
-                            <h3>Alex Thompson</h3>
-                            <p class="organizer-title">Industry Liaison</p>
-                            <p class="organizer-affiliation">Senior Data Scientist<br>Google Research</p>
-                            <div class="organizer-bio">
-                                <p>Alex brings 8 years of industry experience in machine learning and has been instrumental in connecting academic research with real-world applications.</p>
-                            </div>
-                            <div class="organizer-contact">
-                                <a href="mailto:athompson@google.com">📧 athompson@google.com</a>
-                                <a href="https://linkedin.com/in/alexthompsonml" target="_blank">💼 LinkedIn</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="organizer-card">
-                        <div class="organizer-photo">
-                            <img src="../assets/images/organizer-placeholder.jpg" alt="Dr. Raj Patel" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            <div class="photo-placeholder">RP</div>
-                        </div>
-                        <div class="organizer-info">
-                            <h3>Dr. Raj Patel</h3>
-                            <p class="organizer-title">Logistics Chair</p>
-                            <p class="organizer-affiliation">Research Scientist<br>USC Information Sciences Institute</p>
-                            <div class="organizer-bio">
-                                <p>Dr. Patel oversees the operational aspects of the hackathon, ensuring smooth execution of all events and technical infrastructure.</p>
-                            </div>
-                            <div class="organizer-contact">
-                                <a href="mailto:raj.patel@isi.edu">📧 raj.patel@isi.edu</a>
-                                <a href="https://isi.edu/~rpatel" target="_blank">🌐 Personal Page</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="organizer-card">
+                    <!-- Student Assistant -->
+                    <div class="organizer-card modern-card">
                         <div class="organizer-photo">
                             <img src="../assets/images/organizer-placeholder.jpg" alt="Maria Gonzalez" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="photo-placeholder">MG</div>
@@ -154,226 +116,66 @@
                         <div class="organizer-info">
                             <h3>Maria Gonzalez</h3>
                             <p class="organizer-title">Student Outreach Coordinator</p>
-                            <p class="organizer-affiliation">PhD Student, Computer Science<br>University of Southern California</p>
+                            <p class="organizer-role">Student Assistant</p>
+                            <p class="organizer-affiliation">PhD Student, Computer Science, University of Southern California</p>
                             <div class="organizer-bio">
-                                <p>Maria leads efforts to engage with high school and undergraduate students, organizing workshops and mentorship programs.</p>
+                                <p>Maria leads efforts to engage with high school and undergraduate students, organizing workshops and mentorship programs. As a PhD student in machine learning, she brings a unique perspective on bridging educational levels and fostering inclusive participation in AI research.</p>
                             </div>
                             <div class="organizer-contact">
-                                <a href="mailto:maria.gonzalez@usc.edu">📧 maria.gonzalez@usc.edu</a>
-                                <a href="https://twitter.com/mariagonzalezml" target="_blank">🐦 Twitter</a>
+                                <a href="mailto:maria.gonzalez@usc.edu" class="contact-btn">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>maria.gonzalez@usc.edu</span>
+                                </a>
+                                <a href="https://twitter.com/mariagonzalezml" target="_blank" class="contact-btn">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="advisory-board">
-                <h2>Advisory Board</h2>
-                <p class="section-description">
-                    Our advisory board consists of distinguished experts who provide strategic guidance and ensure the highest standards of academic and professional excellence.
-                </p>
-                <div class="advisors-grid">
-                    <div class="advisor-card">
-                        <h3>Dr. Jennifer Kim</h3>
-                        <p class="advisor-title">Director, USC Information Sciences Institute</p>
-                        <p class="advisor-expertise">Expertise: AI Research Strategy, Technology Transfer</p>
-                    </div>
-                    <div class="advisor-card">
-                        <h3>Prof. David Wilson</h3>
-                        <p class="advisor-title">Chair, Computer Science Department, USC</p>
-                        <p class="advisor-expertise">Expertise: Educational Leadership, Curriculum Development</p>
-                    </div>
-                    <div class="advisor-card">
-                        <h3>Dr. Lisa Wang</h3>
-                        <p class="advisor-title">Chief AI Officer, Microsoft Research</p>
-                        <p class="advisor-expertise">Expertise: Industry Applications, Ethical AI</p>
-                    </div>
-                    <div class="advisor-card">
-                        <h3>Prof. Robert Chen</h3>
-                        <p class="advisor-title">Distinguished Professor, Stanford University</p>
-                        <p class="advisor-expertise">Expertise: Machine Learning Theory, Competition Design</p>
-                    </div>
+            <!-- Contact Information Section -->
+            <section class="contact-section">
+                <div class="contact-header">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions or want to get involved? We'd love to hear from you!</p>
                 </div>
-            </section>
-
-            <section class="judging-panel">
-                <h2>Judging Panel</h2>
-                <p class="section-description">
-                    Our judges are carefully selected experts who evaluate submissions based on technical merit, innovation, and practical impact.
-                </p>
                 
-                <div class="judge-categories">
-                    <div class="judge-category">
-                        <h3>🎓 Academic Judges</h3>
-                        <div class="judge-list">
-                            <div class="judge-item">
-                                <h4>Dr. Amanda Foster</h4>
-                                <p>Professor of Machine Learning, MIT</p>
-                            </div>
-                            <div class="judge-item">
-                                <h4>Dr. Kevin Lee</h4>
-                                <p>Associate Professor of Computer Vision, UC Berkeley</p>
-                            </div>
-                            <div class="judge-item">
-                                <h4>Dr. Rachel Martinez</h4>
-                                <p>Professor of Data Science, Carnegie Mellon</p>
-                            </div>
-                            <div class="judge-item">
-                                <h4>Dr. James Thompson</h4>
-                                <p>Research Professor, Georgia Tech</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="judge-category">
-                        <h3>🏢 Industry Judges</h3>
-                        <div class="judge-list">
-                            <div class="judge-item">
-                                <h4>Sarah Johnson</h4>
-                                <p>Principal Scientist, Meta AI</p>
-                            </div>
-                            <div class="judge-item">
-                                <h4>Michael Brown</h4>
-                                <p>Director of ML Engineering, Netflix</p>
-                            </div>
-                            <div class="judge-item">
-                                <h4>Dr. Priya Singh</h4>
-                                <p>Lead Research Scientist, DeepMind</p>
-                            </div>
-                            <div class="judge-item">
-                                <h4>David Park</h4>
-                                <p>Senior ML Engineer, Uber Technologies</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="sponsors-partners">
-                <h2>Sponsors & Partners</h2>
-                <p class="section-description">
-                    We are grateful to our sponsors and partners who make this event possible through their generous support and collaboration.
-                </p>
-                
-                <div class="sponsor-tiers">
-                    <div class="sponsor-tier">
-                        <h3>🥇 Platinum Sponsors</h3>
-                        <div class="sponsor-logos">
-                            <div class="sponsor-logo">
-                                <div class="logo-placeholder">Google</div>
-                                <p>Google AI</p>
-                            </div>
-                            <div class="sponsor-logo">
-                                <div class="logo-placeholder">Microsoft</div>
-                                <p>Microsoft Research</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="sponsor-tier">
-                        <h3>🥈 Gold Sponsors</h3>
-                        <div class="sponsor-logos">
-                            <div class="sponsor-logo">
-                                <div class="logo-placeholder">Meta</div>
-                                <p>Meta AI</p>
-                            </div>
-                            <div class="sponsor-logo">
-                                <div class="logo-placeholder">NVIDIA</div>
-                                <p>NVIDIA</p>
-                            </div>
-                            <div class="sponsor-logo">
-                                <div class="logo-placeholder">AWS</div>
-                                <p>Amazon Web Services</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="sponsor-tier">
-                        <h3>🥉 Silver Sponsors</h3>
-                        <div class="sponsor-logos">
-                            <div class="sponsor-logo">
-                                <div class="logo-placeholder">IBM</div>
-                                <p>IBM Research</p>
-                            </div>
-                            <div class="sponsor-logo">
-                                <div class="logo-placeholder">Intel</div>
-                                <p>Intel AI</p>
-                            </div>
-                            <div class="sponsor-logo">
-                                <div class="logo-placeholder">Adobe</div>
-                                <p>Adobe Research</p>
-                            </div>
-                            <div class="sponsor-logo">
-                                <div class="logo-placeholder">Qualcomm</div>
-                                <p>Qualcomm AI</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="academic-partners">
-                    <h3>🎓 Academic Partners</h3>
-                    <div class="partner-list">
-                        <div class="partner-item">USC Viterbi School of Engineering</div>
-                        <div class="partner-item">USC Information Sciences Institute</div>
-                        <div class="partner-item">Stanford AI Lab</div>
-                        <div class="partner-item">MIT Computer Science and Artificial Intelligence Laboratory</div>
-                        <div class="partner-item">UC Berkeley AI Research</div>
-                        <div class="partner-item">Carnegie Mellon Machine Learning Department</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="volunteer-team">
-                <h2>Volunteer Team</h2>
-                <p class="section-description">
-                    Our dedicated volunteers ensure that every aspect of the hackathon runs smoothly and that participants have the best possible experience.
-                </p>
-                
-                <div class="volunteer-roles">
-                    <div class="volunteer-role">
-                        <h3>🔧 Technical Support Team</h3>
-                        <p>Provides technical assistance to participants, manages the competition platform, and ensures system reliability.</p>
-                        <div class="volunteer-count">15 Volunteers</div>
-                    </div>
-                    <div class="volunteer-role">
-                        <h3>👨‍🏫 Mentorship Team</h3>
-                        <p>Offers guidance and support to participants, conducts workshops, and provides domain expertise.</p>
-                        <div class="volunteer-count">25 Mentors</div>
-                    </div>
-                    <div class="volunteer-role">
-                        <h3>📋 Event Coordination</h3>
-                        <p>Manages registration, communication, logistics, and ensures smooth execution of all events.</p>
-                        <div class="volunteer-count">10 Coordinators</div>
-                    </div>
-                    <div class="volunteer-role">
-                        <h3>🎓 Student Ambassadors</h3>
-                        <p>Represents the hackathon at universities, promotes participation, and assists with outreach activities.</p>
-                        <div class="volunteer-count">20 Ambassadors</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="contact-info">
-                <h2>Contact Information</h2>
                 <div class="contact-grid">
                     <div class="contact-card">
-                        <h3>📧 General Inquiries</h3>
-                        <p><strong>Email:</strong> <a href="mailto:hackathon@isi.edu">hackathon@isi.edu</a></p>
-                        <p><strong>Response Time:</strong> Within 24 hours</p>
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>General Inquiries</h3>
+                        <p><a href="mailto:hackathon@isi.edu">hackathon@isi.edu</a></p>
+                        <span class="contact-detail">Response within 24 hours</span>
                     </div>
+                    
                     <div class="contact-card">
-                        <h3>🔧 Technical Support</h3>
-                        <p><strong>Email:</strong> <a href="mailto:support@isi.edu">support@isi.edu</a></p>
-                        <p><strong>Discord:</strong> #technical-support</p>
+                        <div class="contact-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Technical Support</h3>
+                        <p><a href="mailto:support@isi.edu">support@isi.edu</a></p>
+                        <span class="contact-detail">Discord: #technical-support</span>
                     </div>
+                    
                     <div class="contact-card">
-                        <h3>📞 Phone Support</h3>
-                        <p><strong>Office:</strong> (213) 822-1511</p>
-                        <p><strong>Hours:</strong> Mon-Fri, 9 AM - 5 PM PST</p>
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone Support</h3>
+                        <p>(213) 822-1511</p>
+                        <span class="contact-detail">Mon-Fri, 9 AM - 5 PM PST</span>
                     </div>
+                    
                     <div class="contact-card">
-                        <h3>🏢 Address</h3>
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
                         <p>USC Information Sciences Institute<br>
                         4676 Admiralty Way, Suite 1001<br>
                         Marina del Rey, CA 90292</p>
@@ -381,28 +183,39 @@
                 </div>
             </section>
 
-            <section class="join-team">
-                <h2>Join Our Team</h2>
-                <div class="join-info">
-                    <p>
-                        Interested in contributing to future hackathons? We're always looking for passionate individuals to join our organizing team, advisory board, or volunteer network.
-                    </p>
-                    <div class="join-options">
-                        <div class="join-option">
-                            <h3>🎯 Organizing Committee</h3>
-                            <p>Join the core team that plans and executes the hackathon. Requires significant time commitment but offers great leadership experience.</p>
-                            <a href="mailto:hackathon@isi.edu?subject=Interest in Organizing Committee" class="btn-secondary">Apply to Organize</a>
+            <!-- Join Team Section -->
+            <section class="join-team-section">
+                <div class="join-header">
+                    <h2>Join Our Team</h2>
+                    <p>Interested in contributing to future hackathons? We're always looking for passionate individuals to join our mission.</p>
+                </div>
+                
+                <div class="join-options">
+                    <div class="join-option">
+                        <div class="join-icon">
+                            <i class="fas fa-users-cog"></i>
                         </div>
-                        <div class="join-option">
-                            <h3>👨‍⚖️ Advisory Board</h3>
-                            <p>Provide strategic guidance and expertise. Ideal for senior academics and industry leaders who want to shape the future of AI education.</p>
-                            <a href="mailto:hackathon@isi.edu?subject=Interest in Advisory Board" class="btn-secondary">Join Advisory</a>
+                        <h3>Organizing Committee</h3>
+                        <p>Join the core team that plans and executes the hackathon. Gain valuable leadership experience while shaping the future of AI education.</p>
+                        <a href="mailto:hackathon@isi.edu?subject=Interest in Organizing Committee" class="btn-primary">Apply to Organize</a>
+                    </div>
+                    
+                    <div class="join-option">
+                        <div class="join-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
                         </div>
-                        <div class="join-option">
-                            <h3>🙋‍♀️ Volunteer</h3>
-                            <p>Help with various aspects of the event. Great way to gain experience and contribute to the AI community.</p>
-                            <a href="mailto:hackathon@isi.edu?subject=Volunteer Interest" class="btn-secondary">Volunteer</a>
+                        <h3>Mentorship Program</h3>
+                        <p>Share your expertise with the next generation. Help guide participants through their learning journey and project development.</p>
+                        <a href="mailto:hackathon@isi.edu?subject=Interest in Mentorship" class="btn-primary">Become a Mentor</a>
+                    </div>
+                    
+                    <div class="join-option">
+                        <div class="join-icon">
+                            <i class="fas fa-hands-helping"></i>
                         </div>
+                        <h3>Volunteer</h3>
+                        <p>Help with various aspects of the event. Great way to gain experience and contribute to the AI community while networking with peers.</p>
+                        <a href="mailto:hackathon@isi.edu?subject=Volunteer Interest" class="btn-primary">Volunteer</a>
                     </div>
                 </div>
             </section>
