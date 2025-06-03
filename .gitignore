@@ -40,3 +40,8 @@ build/
 # Temporary files
 *.tmp
 *.temp
+
+# Project discussion and analysis files
+discussion.md
+*.docx
+context.txt
