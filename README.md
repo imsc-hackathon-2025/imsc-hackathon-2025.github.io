@@ -133,7 +133,7 @@ Update these key details in `index.html`:
 ```html
 <!-- Hero section -->
 <h1 class="hero-title">IMSC Hackathon 2025</h1>
-<span>June 14-16, 2025</span>
+<span>TBD</span>
 <span>USC Campus, Los Angeles</span>
 
 <!-- Contact information -->

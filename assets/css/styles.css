@@ -220,6 +220,56 @@ body {
     font-weight: 700;
     margin-bottom: 1rem;
     line-height: 1.2;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(18, end) infinite, fade-glow 4s infinite;
+}
+
+/* Typography animation effect */
+.hero-title::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--usc-gold);
+    animation: typing-cursor 4s infinite;
+}
+
+/* Typewriter effect */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+/* Cursor blinking effect */
+@keyframes typing-cursor {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Subtle glow effect */
+@keyframes fade-glow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 204, 0, 0.6), 0 0 30px rgba(255, 204, 0, 0.4);
+    }
 }
 
 .hero-subtitle {
@@ -937,9 +987,52 @@ body {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
+    align-items: start;
+}
+
+/* Center the first footer section (title) */
+.footer-section:first-child {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section:first-child h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-section:first-child h3 a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section:first-child h3 a:hover {
+    color: var(--usc-gold);
+}
+
+/* Style other footer sections */
+.footer-section:not(:first-child) {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .footer-section:not(:first-child) {
+        text-align: center;
+    }
 }
 
 .footer-section h3,
@@ -1036,9 +1129,14 @@ body {
 
 .content-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
     align-items: start;
+}
+
+/* If sidebar content exists, use 2-column layout */
+.content-grid.has-sidebar {
+    grid-template-columns: 2fr 1fr;
 }
 
 .content-main {
@@ -1146,7 +1244,7 @@ body {
     padding-bottom: 0.5rem;
 }
 
-.content-sidebar {
+/* .content-sidebar {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -1165,7 +1263,7 @@ body {
     margin-bottom: 1.5rem;
     border-bottom: 2px solid #667eea;
     padding-bottom: 0.5rem;
-}
+} */
 
 .fact-list {
     list-style: none;

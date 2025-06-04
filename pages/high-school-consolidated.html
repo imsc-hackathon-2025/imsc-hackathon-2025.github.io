@@ -20,14 +20,9 @@
                 <!-- <a href="about.html" class="nav-link">About</a> -->
                 <a href="high-school-consolidated.html" class="nav-link active">High School</a>
                 <a href="undergraduate-consolidated.html" class="nav-link">Undergraduate</a>
-                <a href="graduate-plus-consolidated.html" class="nav-link">Graduate+</a>
+                <!-- <a href="graduate-plus-consolidated.html" class="nav-link">Graduate+</a> -->
                 <a href="organizers.html" class="nav-link">Organizers</a>
             </div>
-            <!-- <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div> -->
         </div>
     </nav>
 
@@ -39,7 +34,7 @@
                     <i class="fas fa-graduation-cap"></i>
                 </div>
                 <h1>High School Track</h1>
-                <p class="track-subtitle">Pothole patrol</p>
+                <p class="track-subtitle">Pothole detection</p>
             </div>
         </div>
     </section>
@@ -64,10 +59,10 @@
                     <i class="fas fa-clipboard-check"></i>
                     <span>Criteria</span>
                 </a>
-                <a href="#leaderboard" class="section-nav-link">
+                <!-- <a href="#leaderboard" class="section-nav-link">
                     <i class="fas fa-trophy"></i>
                     <span>Leaderboard</span>
-                </a>
+                </a> -->
             </div>
         </div>
     </section>
@@ -78,24 +73,19 @@
             <div class="content-header">
                 <h1 class="content-title">
                     <i class="fas fa-database"></i>
-                    Track Overview & Challenge
+                    High School Track
                 </h1>
                 <br>
             </div>
             <div class="content-grid">
                 <div class="content-main">
                     <div class="track-info">
-                        <h2>Track Overview & Challenge</h2>
+                        <h2>Overview & Challenge</h2>
                         <p>
-                            The High School Track introduces students to artificial intelligence and computer vision by tackling a real-world problem: <strong>road damage detection</strong>. This beginner-friendly competition emphasizes teamwork, creativity, and hands-on learning. Participants will collaborate in teams to develop AI models that automatically identify and localize <strong>potholes</strong> in road images, contributing to safer roads and smarter infrastructure.
+                            The High School Track introduces students to artificial intelligence and computer vision by tackling a real-world problem: <strong>pothole detection</strong>. This beginner-friendly competition emphasizes teamwork, creativity, and hands-on learning. Participants will collaborate in teams to develop AI models that automatically identify and localize <strong>potholes</strong> in road images, contributing to safer roads and smarter infrastructure.
                         </p>
                         <br>
                         <div class="track-features">
-                            <div class="feature-card">
-                                <h3><i class="fas fa-brain"></i> Beginner Friendly</h3>
-                                <p>No prior experience required—comprehensive tutorials and mentor support are provided throughout the competition.</p>
-                            </div>
-                            <br>
                             <div class="feature-card">
                                 <h3><i class="fas fa-users"></i> Teamwork</h3>
                                 <p>Form teams of 2-5 students to collaborate, brainstorm, and learn together.</p>
@@ -104,7 +94,7 @@
                         <div class="challenge-description" style="margin-top:2em;">
                             <h3>Challenge Summary</h3>
                             <p>
-                                <strong>Your mission:</strong> Build an AI model that detects and localizes potholes in road images by drawing bounding boxes around each pothole. You will use a curated subset of the <strong>Road Dataset</strong>—specifically, images from India and Japan containing pothole damage.
+                                <strong>Your mission:</strong> Build an <u>Object Detection model</u> that detects and localizes potholes in road images by drawing bounding boxes around each pothole. You will use a curated subset of the <strong>Image Dataset</strong>—specifically, images from India and Japan containing pothole damage.
                             </p>
                             <ul>
                                 <li><strong>Input:</strong> Road scene images</li>
@@ -119,24 +109,29 @@
                             </p>
                             <ul>
                                 <li><strong>Countries:</strong> India and Japan</li>
-                                <li><strong>Damage Type:</strong> Pothole only</li>
+                                <li><strong>Damage Type:</strong> Pothole</li>
                                 <li><strong>Annotations:</strong> Each image is labeled with bounding boxes around potholes</li>
                             </ul>
-                            <!-- <div class="columns-list">
-                                <span class="column-tag">image_id</span>
-                                <span class="column-tag">damage_type: pothole</span>
-                                <span class="column-tag">bounding_box</span>
-                                <span class="column-tag">country</span>
-                            </div> -->
-                        </div>
-                        <div class="challenge-goals" style="margin-top:2em;">
-                            <h3><i class="fas fa-bullseye"></i> What You'll Learn & Do</h3>
-                            <ul>
-                                <li>Apply computer vision and machine learning to a real-world problem</li>
-                                <li>Experiment with data augmentation to boost model performance</li>
-                                <li>Practice teamwork, coding, and critical thinking</li>
-                                <li>Gain experience with AI tools and datasets</li>
-                            </ul>
+                            
+                            <div class="dataset-visualization" style="margin-top: 2em; text-align: center;">
+                                <h4>Training Dataset Distribution</h4>
+                                <img src="../assets/images/high_school_dataset_distribution.png" 
+                                     alt="High School Dataset Distribution by Country" 
+                                     style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 1em 0;">
+                                <p style="font-style: italic; color: #666; margin-top: 0.5em; font-size: 0.9em;">
+                                    Distribution of pothole labels across countries for the High School Track.
+                                    Total: 1,956 pothole labels (India: 1,025, Japan: 931)
+                                </p>
+                                
+                                <h4 style="margin-top: 2em;">Training Images by Country</h4>
+                                <img src="../assets/images/high_school_image_count.png" 
+                                     alt="High School Image Count by Country" 
+                                     style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 1em 0;">
+                                <p style="font-style: italic; color: #666; margin-top: 0.5em; font-size: 0.9em;">
+                                    Number of training images available for each country.
+                                    Total: 1,956 images (India: 1,025, Japan: 931)
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,7 +169,7 @@
                                 </div>
                                 <div class="stat-content">
                                     <h3>Start Date</h3>
-                                    <p>TBD: March 15, 2025</p>
+                                    <p>TBD</p>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +184,7 @@
                                         <i class="fas fa-play"></i>
                                         Phase 1: Kickoff & Team Formation
                                     </h3>
-                                    <p class="phase-time"> TBD: March 15, 2025 - 9:00 AM</p>
+                                    <p class="phase-time">TBD</p>
                                     <!-- <ul>
                                         <li>Opening ceremony and introduction</li>
                                         <li>Dataset release and explanation</li>
@@ -203,9 +198,9 @@
                                 <div class="phase-content">
                                     <h3>
                                         <i class="fas fa-code"></i>
-                                        Phase 2: Development & Coding
+                                        Phase 2: Train Dataset Released
                                     </h3>
-                                    <p class="phase-time"> TBD: March 15, 2025 - 10:00 AM to March 16, 2025 - 6:00 AM</p>
+                                    <p class="phase-time">TBD</p>
                                     <!-- <ul>
                                         <li>20-hour intensive coding period</li>
                                         <li>Mentor support available</li>
@@ -220,8 +215,8 @@
                                 <div class="phase-content">
                                     <h3>
                                         <i class="fas fa-upload"></i>
-                                        Phase 3: Submission & Testing</h3>
-                                    <p class="phase-time">TBD: March 16, 2025 - 6:00 AM to 8:00 AM</p>
+                                        Phase 3: Test Images Released</h3>
+                                    <p class="phase-time">TBD</p>
                                     <!-- <ul>
                                         <li>Final code submission</li>
                                         <li>Demo video recording</li>
@@ -237,7 +232,7 @@
                                         <i class="fas fa-trophy"></i>
                                         Phase 4: Presentations
                                     </h3>
-                                    <p class="phase-time">TBD: March 16, 2025 - 8:00 AM to 12:00 PM</p>
+                                    <p class="phase-time">TBD</p>
                                     <!-- <ul>
                                         <li>Team presentations (5 min each)</li>
                                         <li>Judge deliberation</li>
@@ -249,9 +244,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="content-sidebar">
-                </div> -->
             </div>
         </div>
     </section>
@@ -377,16 +369,12 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="content-sidebar">
-                    <!-- Sidebar removed as requested -->
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Leaderboard Section -->
-    <section id="leaderboard" class="section-content">
+    <!-- <section id="leaderboard" class="section-content">
         <div class="container">
             <div class="content-header">
                 <h1 class="content-title">
@@ -395,22 +383,6 @@
                 </h1>
                 <p class="content-subtitle">Real-time competition standings</p>
             </div>
-
-            <!-- <div class="leaderboard-stats">
-                <div class="stat-item">
-                    <h3>Registered Teams</h3>
-                    <span class="stat-number">42</span>
-                </div>
-                <div class="stat-item">
-                    <h3>Active Submissions</h3>
-                    <span class="stat-number">0</span>
-                </div>
-                <div class="stat-item">
-                    <h3>Best Accuracy</h3>
-                    <span class="stat-number">--</span>
-                </div>
-            </div> -->
-
             <div class="leaderboard-controls">
                 <div class="filter-options">
                     <button class="filter-btn active">All Teams</button>
@@ -434,21 +406,7 @@
                             <i class="fas fa-clock"></i>
                         </div>
                         <h3>Competition Not Started</h3>
-                        <p>The leaderboard will be updated in real-time once the competition begins on March 15, 2025.</p>
-                        
-                        <!-- <div class="timeline-preview">
-                            <h4>What to expect:</h4>
-                            <div class="timeline-item">
-                                <strong>Real-time updates</strong> - See your ranking change as you submit
-                            </div>
-                            <div class="timeline-item">
-                                <strong>Anonymous rankings</strong> - Teams shown by ID during competition
-                            </div>
-                            <div class="timeline-item">
-                                <strong>Final reveal</strong> - Team names revealed at closing ceremony
-                            </div>
-                        </div> -->
-                        
+                        <p>The leaderboard will be updated in real-time once the competition begins (TBD).</p>
                         <a href="#" class="btn btn-primary pre-register-btn">
                             <i class="fas fa-user-plus"></i> Register Your Team
                         </a>
@@ -456,7 +414,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -472,7 +430,7 @@
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="organizers.html">Organizers</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <!-- <li><a href="#">Contact</a></li> -->
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -480,7 +438,7 @@
                     <ul>
                         <li><a href="high-school-consolidated.html">High School</a></li>
                         <li><a href="undergraduate-consolidated.html">Undergraduate</a></li>
-                        <li><a href="graduate-plus-consolidated.html">Graduate+</a></li>
+                        <!-- <li><a href="graduate-plus-consolidated.html">Graduate+</a></li> -->
                     </ul>
                 </div>
             </div>

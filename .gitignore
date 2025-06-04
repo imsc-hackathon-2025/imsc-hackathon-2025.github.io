@@ -45,3 +45,6 @@ build/
 discussion.md
 *.docx
 context.txt
+
+# dataset reports
+*data/*

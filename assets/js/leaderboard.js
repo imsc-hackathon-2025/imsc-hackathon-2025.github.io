@@ -178,7 +178,7 @@ class LeaderboardManager {
                             <i class="fas fa-clock"></i>
                         </div>
                         <h3>Competition Not Started</h3>
-                        <p>The leaderboard will be updated in real-time once the competition begins on March 15, 2025.</p>
+                        <p>The leaderboard will be updated in real-time once the competition begins (TBD).</p>
                         
                         <div class="timeline-preview">
                             <h4>What to expect:</h4>

@@ -20,7 +20,7 @@
                 <!-- <a href="about.html" class="nav-link">About</a> -->
                 <a href="high-school-consolidated.html" class="nav-link">High School</a>
                 <a href="undergraduate-consolidated.html" class="nav-link active">Undergraduate</a>
-                <a href="graduate-plus-consolidated.html" class="nav-link">Graduate+</a>
+                <!-- <a href="graduate-plus-consolidated.html" class="nav-link">Graduate+</a> -->
                 <a href="organizers.html" class="nav-link">Organizers</a>
             </div>
             <div class="hamburger">
@@ -66,10 +66,6 @@
                     <i class="fas fa-clipboard-check"></i>
                     <span>Criteria</span>
                 </a>
-                <a href="#leaderboard" class="section-nav-link">
-                    <i class="fas fa-trophy"></i>
-                    <span>Leaderboard</span>
-                </a>
             </div>
         </div>
     </section>
@@ -80,45 +76,30 @@
             <div class="content-header">
                 <h1 class="content-title">
                     <i class="fas fa-database"></i>
-                    Track Overview & Challenge
+                    Undergraduate Track
                 </h1>
                 <br>
-                <!-- <p class="content-subtitle">Road Damage Classification and Localization for Undergraduate</p> -->
             </div>
 
             <div class="content-grid">
                 <div class="content-main">
                     <div class="track-info">
-                        <h2>Track Overview & Challenge</h2>
+                        <h2>Overview & Challenge</h2>
                         <p>
                             The Undergraduate Track immerses students in a real-world, industry-inspired challenge: <strong>comprehensive road damage detection</strong>. Teams will develop advanced AI models to identify and localize <strong>four types of road damage</strong>—potholes, alligator cracks, longitudinal cracks, and transverse cracks—using a diverse dataset from India, Japan, and the USA. This track emphasizes technical depth, teamwork, and professional development, preparing participants for future careers in AI and data science.
                         </p>
-                        <!-- <div class="track-features">
-                            <div class="feature-card">
-                                <h3><i class="fas fa-industry"></i> Industry Focus</h3>
-                                <p>Work on real-world problems faced by technology companies and research institutions.</p>
-                            </div>
-                            <div class="feature-card">
-                                <h3><i class="fas fa-code-branch"></i> Advanced Tech</h3>
-                                <p>Utilize modern AI/ML frameworks, data pipelines, and best coding practices.</p>
-                            </div>
-                            <div class="feature-card">
-                                <h3><i class="fas fa-handshake"></i> Mentorship</h3>
-                                <p>Receive guidance from experienced professionals and industry mentors.</p>
-                            </div>
-                        </div> -->
-<!-- 
+                        <br>
                         <div class="challenge-description" style="margin-top:2em;">
                             <h3>Challenge Summary</h3>
                             <p>
-                                <strong>Your mission:</strong> Build an AI model that detects and localizes <strong>all four major road damage types</strong> in images. For each image, your model should output bounding boxes and class labels for potholes, alligator cracks, longitudinal cracks, and transverse cracks. The challenge uses a subset of the <strong>Road Dataset</strong> from India, Japan, and the USA.
-                            </p> -->
+                                <strong>Your mission:</strong> Build an <u>Object Detection model</u> that detects and localizes <strong>all four major road damage types</strong> in images. For each image, your model should output bounding boxes and class labels for potholes, alligator cracks, longitudinal cracks, and transverse cracks. The challenge uses a subset of the <strong>Road Dataset</strong> from India, Japan, and the USA.
+                            </p>
                             <ul>
                                 <li><strong>Input:</strong> Road scene images</li>
                                 <li><strong>Output:</strong> For each damage, predict its type and bounding box (class x y w h)</li>
                                 <li><strong>Focus:</strong> Multi-class detection and localization</li>
                             </ul>
-                        <!-- </div> -->
+                        </div>
 
                         <div class="dataset-structure" style="margin-top:2em;">
                             <h3><i class="fas fa-database"></i> About the Dataset</h3>
@@ -130,27 +111,28 @@
                                 <li><strong>Damage Types:</strong> Pothole, Alligator Crack, Longitudinal Crack, Transverse Crack</li>
                                 <li><strong>Annotations:</strong> Each image is labeled with bounding boxes and damage type</li>
                             </ul>
-                            <!-- <div class="columns-list">
-                                <span class="column-tag">image_id</span>
-                                <span class="column-tag">damage_type</span>
-                                <span class="column-tag">bounding_box</span>
-                                <span class="column-tag">country</span>
-                            </div> -->
-                        </div>
-                        <div class="challenge-goals" style="margin-top:2em;">
-                            <h3><i class="fas fa-bullseye"></i> What You'll Learn & Do</h3>
-                            <ul>
-                                <li>Apply advanced computer vision and deep learning to a real-world infrastructure problem</li>
-                                <li>Experiment with data augmentation and model optimization</li>
-                                <li>Collaborate in teams and practice professional software development</li>
-                                <li>Gain experience with multi-class detection and real datasets</li>
-                            </ul>
+                            
+                            <div class="dataset-visualization" style="margin-top: 2em; text-align: center;">
+                                <h4>Training Dataset Distribution</h4>
+                                <img src="../assets/images/undergraduate_dataset_distribution.png" 
+                                     alt="Undergraduate Dataset Distribution by Country and Damage Type" 
+                                     style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 1em 0;">
+                                <p style="font-style: italic; color: #666; margin-top: 0.5em; font-size: 0.9em;">
+                                    Distribution of damage labels across countries and damage types for the Undergraduate Track.
+                                    Total: 10,556 labels across India (2,836), Japan (4,170), and USA (3,550)
+                                </p>
+                                
+                                <h4 style="margin-top: 2em;">Training Images by Country</h4>
+                                <img src="../assets/images/undergraduate_image_count.png" 
+                                     alt="Undergraduate Image Count by Country" 
+                                     style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 1em 0;">
+                                <p style="font-style: italic; color: #666; margin-top: 0.5em; font-size: 0.9em;">
+                                    Number of training images available for each country.
+                                    Total: 6,039 images (India: 1,976, Japan: 2,082, USA: 1,981)
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="content-sidebar">
-                    <!-- Sidebar removed as requested -->
                 </div>
             </div>
         </div>
@@ -186,7 +168,7 @@
                                 </div>
                                 <div class="stat-content">
                                     <h3>Start Date</h3>
-                                    <p>TBD: March 15, 2025</p>
+                                    <p>TBD</p>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +183,7 @@
                                         <i class="fas fa-play"></i>
                                         Phase 1: Kickoff & Team Formation
                                     </h3>
-                                    <p class="phase-time"> TBD: March 15, 2025 - 9:00 AM</p>
+                                    <p class="phase-time">TBD</p>
                                     <!-- <ul>
                                         <li>Opening ceremony and introduction</li>
                                         <li>Dataset release and explanation</li>
@@ -215,9 +197,9 @@
                                 <div class="phase-content">
                                     <h3>
                                         <i class="fas fa-code"></i>
-                                        Phase 2: Development & Coding
+                                        Phase 2: Train Dataset Released
                                     </h3>
-                                    <p class="phase-time"> TBD: March 15, 2025 - 10:00 AM to March 16, 2025 - 6:00 AM</p>
+                                    <p class="phase-time">TBD</p>
                                     <!-- <ul>
                                         <li>20-hour intensive coding period</li>
                                         <li>Mentor support available</li>
@@ -232,8 +214,8 @@
                                 <div class="phase-content">
                                     <h3>
                                         <i class="fas fa-upload"></i>
-                                        Phase 3: Submission & Testing</h3>
-                                    <p class="phase-time">TBD: March 16, 2025 - 6:00 AM to 8:00 AM</p>
+                                        Phase 3: Test Images Released</h3>
+                                    <p class="phase-time">TBD</p>
                                     <!-- <ul>
                                         <li>Final code submission</li>
                                         <li>Demo video recording</li>
@@ -249,7 +231,7 @@
                                         <i class="fas fa-trophy"></i>
                                         Phase 4: Presentations
                                     </h3>
-                                    <p class="phase-time">TBD: March 16, 2025 - 8:00 AM to 12:00 PM</p>
+                                    <p class="phase-time">TBD</p>
                                     <!-- <ul>
                                         <li>Team presentations (5 min each)</li>
                                         <li>Judge deliberation</li>
@@ -397,79 +379,6 @@
         </div>
     </section>
 
-    <!-- Leaderboard Section -->
-    <section id="leaderboard" class="section-content">
-        <div class="container">
-            <div class="content-header">
-                <h1 class="content-title">
-                    <i class="fas fa-trophy"></i>
-                    Leaderboard & Results
-                </h1>
-                <p class="content-subtitle">Real-time competition standings</p>
-            </div>
-
-            <!-- <div class="leaderboard-stats">
-                <div class="stat-item">
-                    <h3>Registered Teams</h3>
-                    <span class="stat-number">42</span>
-                </div>
-                <div class="stat-item">
-                    <h3>Active Submissions</h3>
-                    <span class="stat-number">0</span>
-                </div>
-                <div class="stat-item">
-                    <h3>Best Accuracy</h3>
-                    <span class="stat-number">--</span>
-                </div>
-            </div> -->
-
-            <div class="leaderboard-controls">
-                <div class="filter-options">
-                    <button class="filter-btn active">All Teams</button>
-                    <button class="filter-btn">My School</button>
-                    <button class="filter-btn">Top 10</button>
-                </div>
-                <div class="sort-options">
-                    <label for="sort-by">Sort by:</label>
-                    <select id="sort-by">
-                        <option value="score">Score</option>
-                        <option value="accuracy">Accuracy</option>
-                        <option value="time">Submission Time</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="leaderboard-container">
-                <div class="no-data">
-                    <div class="no-data-message">
-                        <div class="no-data-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h3>Competition Not Started</h3>
-                        <p>The leaderboard will be updated in real-time once the competition begins on March 15, 2025.</p>
-                        
-                        <!-- <div class="timeline-preview">
-                            <h4>What to expect:</h4>
-                            <div class="timeline-item">
-                                <strong>Real-time updates</strong> - See your ranking change as you submit
-                            </div>
-                            <div class="timeline-item">
-                                <strong>Anonymous rankings</strong> - Teams shown by ID during competition
-                            </div>
-                            <div class="timeline-item">
-                                <strong>Final reveal</strong> - Team names revealed at closing ceremony
-                            </div>
-                        </div> -->
-                        
-                        <a href="#" class="btn btn-primary pre-register-btn">
-                            <i class="fas fa-user-plus"></i> Register Your Team
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -492,7 +401,7 @@
                     <ul>
                         <li><a href="high-school-consolidated.html">High School</a></li>
                         <li><a href="undergraduate-consolidated.html">Undergraduate</a></li>
-                        <li><a href="graduate-plus-consolidated.html">Graduate+</a></li>
+                        <!-- <li><a href="graduate-plus-consolidated.html">Graduate+</a></li> -->
                     </ul>
                 </div>
             </div>
