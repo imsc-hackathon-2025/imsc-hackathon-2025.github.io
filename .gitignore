@@ -48,3 +48,5 @@ context.txt
 
 # dataset reports
 *data/*
+
+*.py
